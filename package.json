@@ -1,0 +1,17 @@
+{
+  "name": "real-estate-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scrapers, importers, and crons. Writes to Mongo with the raw driver — the read model lives in real_estate_backend (Java), and duplicating it in an ODM here would guarantee drift.",
+  "scripts": {
+    "import:rera": "node importers/import_rera.mjs",
+    "import:content": "node importers/import_content.mjs",
+    "validate": "node validate_content.mjs",
+    "migrate:r2": "node migrate_to_r2.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.658.0",
+    "mongodb": "^6.9.0"
+  }
+}

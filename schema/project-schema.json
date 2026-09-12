@@ -1,0 +1,510 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://uprera-estates.local/schema/project-schema.json",
+  "title": "Project Content — master field definition",
+
+  "x-schema-version": "1.3.0",
+  "x-purpose": [
+    "THE canonical list of every field we want to capture for a project.",
+    "The SOURCE of a field differs per project (one builder ships a designer PDF,",
+    "another a price-list photo, another only a portal listing). WHAT we capture",
+    "does not. This file is that invariant; extraction scripts are the variable.",
+    "",
+    "Adding a new field is a change to THIS FILE FIRST, then to the Java model,",
+    "then to the frontend section registry. Never the other way round."
+  ],
+  "x-consumers": [
+    "real_estate_scripts/validate_content.mjs — completeness + validity report",
+    "real_estate_scripts/*                    — per-project extraction checklist",
+    "real_estate_backend                      — Spring Data model + request validation",
+    "real_estate_frontend                     — section registry keys off the same paths"
+  ],
+
+  "x-vocab": {
+    "importance": {
+      "required": "Page cannot publish without it. Blocks `published: true`.",
+      "recommended": "Publishable without it, but the project looks thin. Chase it.",
+      "optional": "Nice to have; many projects will never have it."
+    },
+    "sources": {
+      "rera": "UP-RERA portal — already scraped into the `projects` collection. Do NOT hand-extract.",
+      "brochure": "Builder brochure PDF (often image-only, no text layer)",
+      "floor_plan_page": "A per-unit floor-plan page inside the brochure",
+      "master_plan_page": "The site/master plan page inside the brochure",
+      "price_list": "Builder price list (PDF, photo, or WhatsApp image)",
+      "portal": "99acres / Housing / MagicBricks listing — date-label it, never mix with builder figures",
+      "builder_direct": "Sales team, channel partner, or site visit",
+      "derived": "Computed by us from other fields — must set provenance.computed = true"
+    }
+  },
+
+  "x-changelog": [
+    { "version": "1.0.0", "date": "2026-08-14", "note": "Initial master definition, derived from the ACE Mahagun Medalleo brochure + price list." },
+    { "version": "1.1.0", "date": "2026-08-15", "note": "media_ref gains width/height. The frontend needs intrinsic dimensions to reserve layout space before an image loads; without them every floor plan causes layout shift." },
+    { "version": "1.2.0", "date": "2026-08-15", "note": "clubs[] gains an optional media array (media_ref[]). Added for the Project Showcase redesign, which shows a clubhouse card with a real photo — previously there was no structural way to say which gallery photo belongs to which club, so a component could only guess from captions." },
+    { "version": "1.3.0", "date": "2026-09-04", "note": "media_ref.asset_id removed (never adopted — GridFS-backed image storage was designed but not built). url is now required and its meaning changed: an object storage key resolved into an absolute CDN URL by real_estate_backend at read time, not a served-app path. Moving derived imagery and RERA document PDFs off local disk / Mongo GridFS onto Cloudflare R2 + a custom CDN domain." }
+  ],
+
+  "type": "object",
+  "required": ["registration_no"],
+  "properties": {
+
+    "registration_no": {
+      "type": "string",
+      "description": "UP-RERA registration number. Joins this document to the `projects` (RERA) collection.",
+      "pattern": "^UPRERAPRJ[0-9]+$",
+      "x-section": "identity",
+      "x-importance": "required",
+      "x-sources": ["rera", "brochure"],
+      "x-extraction": "Printed on the brochure back page and every builder creative by law. Must already exist in the projects collection.",
+      "x-since": "1.0.0"
+    },
+
+    "slug": {
+      "type": "string",
+      "description": "URL slug. Stable once published — it is a permalink.",
+      "pattern": "^[a-z0-9-]+$",
+      "x-section": "identity",
+      "x-importance": "required",
+      "x-sources": ["derived"],
+      "x-extraction": "kebab-case of `<project name>-<locality>-<city>`.",
+      "x-since": "1.0.0"
+    },
+
+    "published": {
+      "type": "boolean",
+      "default": false,
+      "description": "Human gate. The API only serves content where this is true.",
+      "x-section": "identity",
+      "x-importance": "required",
+      "x-sources": ["builder_direct"],
+      "x-since": "1.0.0"
+    },
+
+    "marketing": {
+      "type": "object",
+      "x-section": "hero",
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "description": "Name as marketed, which often differs from the RERA name.",
+          "x-importance": "required",
+          "x-sources": ["brochure", "portal"],
+          "x-extraction": "Brochure cover. RERA says 'Mahagun Medalleo'; the market says 'ACE Mahagun Medalleo'.",
+          "x-since": "1.0.0"
+        },
+        "tagline": {
+          "type": "string",
+          "x-importance": "recommended",
+          "x-sources": ["brochure"],
+          "x-extraction": "Cover or first spread, e.g. '3 & 4 BHK Luxury Residences & Penthouses'.",
+          "x-since": "1.0.0"
+        },
+        "locality": {
+          "type": "string",
+          "description": "Sector / colony. The primary SEO term after the project name.",
+          "x-importance": "required",
+          "x-sources": ["brochure", "rera", "portal"],
+          "x-since": "1.0.0"
+        },
+        "city": { "type": "string", "x-importance": "required", "x-sources": ["brochure", "rera"], "x-since": "1.0.0" },
+        "status": {
+          "type": "string",
+          "enum": ["pre_launch", "new_launch", "under_construction", "ready_to_move", "completed"],
+          "x-importance": "required",
+          "x-sources": ["portal", "builder_direct", "rera"],
+          "x-since": "1.0.0"
+        },
+        "possession_on": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}$",
+          "description": "YYYY-MM. Cross-check against the RERA declared_completion_date and flag divergence.",
+          "x-importance": "required",
+          "x-sources": ["rera", "portal", "builder_direct"],
+          "x-extraction": "RERA is authoritative; portals are often optimistic. Where they differ, store RERA and note the portal figure.",
+          "x-since": "1.0.0"
+        },
+        "highlights": {
+          "type": "array",
+          "items": { "type": "string" },
+          "maxItems": 6,
+          "description": "Short scannable USPs for the hero.",
+          "x-importance": "recommended",
+          "x-sources": ["brochure"],
+          "x-since": "1.0.0"
+        },
+        "rera_name_differs": {
+          "type": "boolean",
+          "description": "True when display_name != the RERA project_name, so the UI can show both.",
+          "x-importance": "optional",
+          "x-sources": ["derived"],
+          "x-since": "1.0.0"
+        }
+      }
+    },
+
+    "scale": {
+      "type": "object",
+      "x-section": "highlights",
+      "properties": {
+        "land_area": { "$ref": "#/$defs/measure", "x-importance": "required", "x-sources": ["brochure", "portal", "rera"], "x-extraction": "Brochure master-plan page or portal header. Verify against the RERA land details.", "x-since": "1.0.0" },
+        "total_units": { "type": "integer", "minimum": 1, "x-importance": "recommended", "x-sources": ["portal", "rera"], "x-extraction": "RERA plan_details row count is authoritative; portals round.", "x-since": "1.0.0" },
+        "tower_count": { "type": "integer", "minimum": 1, "x-importance": "recommended", "x-sources": ["brochure", "portal"], "x-since": "1.0.0" },
+        "floors": { "type": "string", "description": "Free text, e.g. 'G+30' or '2B+G+38'.", "x-importance": "optional", "x-sources": ["brochure"], "x-since": "1.0.0" },
+        "open_area_percent": { "type": "number", "minimum": 0, "maximum": 100, "x-importance": "optional", "x-sources": ["brochure"], "x-extraction": "Only use when the sanctioned denominator is known — never derive it from a green-area sum alone.", "x-since": "1.0.0" },
+        "green_area": { "$ref": "#/$defs/measure", "x-importance": "optional", "x-sources": ["brochure"], "x-since": "1.0.0" },
+        "green_breakup": {
+          "type": "array",
+          "x-importance": "optional",
+          "x-sources": ["brochure"],
+          "x-extraction": "Some brochures print a named green-area table per zone. Sum it, but mark the sum computed.",
+          "x-since": "1.0.0",
+          "items": {
+            "type": "object",
+            "properties": { "name": { "type": "string" }, "sqm": { "type": "number" }, "acres": { "type": "number" } }
+          }
+        }
+      }
+    },
+
+    "pricing": {
+      "type": "object",
+      "x-section": "pricing",
+      "required": ["area_basis"],
+      "properties": {
+        "area_basis": {
+          "type": "string",
+          "enum": ["super", "carpet", "built_up"],
+          "description": "Which area every price on this project is quoted against.",
+          "x-importance": "required",
+          "x-sources": ["price_list"],
+          "x-extraction": "NEVER default this. A rate without a basis is meaningless and legally risky — portals disagree on the same project purely because they mix super and carpet. If the source does not state it, leave the whole pricing block out.",
+          "x-since": "1.0.0"
+        },
+        "bsp": {
+          "type": "object",
+          "description": "Basic sale price.",
+          "x-importance": "required",
+          "x-sources": ["price_list"],
+          "x-extraction": "Header of the price list, e.g. '₹20,995 / sq.ft. W.E.F. 12.04.2026'. Capture the effective date — price lists are reissued.",
+          "x-since": "1.0.0",
+          "properties": {
+            "amount": { "type": "number", "minimum": 1 },
+            "unit": { "type": "string", "enum": ["per_sqft", "per_sqm", "lumpsum"] },
+            "wef": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+          }
+        },
+        "starting_price": {
+          "type": "object",
+          "x-importance": "recommended",
+          "x-sources": ["brochure", "price_list"],
+          "x-extraction": "The marketing '₹5.25 Cr*' figure. Keep the display string verbatim, including the asterisk.",
+          "x-since": "1.0.0",
+          "properties": { "amount": { "type": "number" }, "display": { "type": "string" } }
+        },
+        "price_range": {
+          "type": "object",
+          "x-importance": "optional",
+          "x-sources": ["derived"],
+          "x-since": "1.0.0",
+          "properties": { "min": { "type": "number" }, "max": { "type": "number" } }
+        },
+        "payment_plan": {
+          "type": "object",
+          "x-importance": "required",
+          "x-sources": ["price_list", "brochure"],
+          "x-extraction": "The creative headline ('25:25:25:25') and the price list's actual milestones often DIFFER. Capture both — headline in `headline`, the real schedule in `milestones`.",
+          "x-since": "1.0.0",
+          "properties": {
+            "headline": { "type": "string" },
+            "milestones": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["label", "percent"],
+                "properties": { "label": { "type": "string" }, "percent": { "type": "number", "minimum": 0, "maximum": 100 }, "note": { "type": "string" } }
+              }
+            }
+          }
+        },
+        "charges": {
+          "type": "array",
+          "description": "Everything payable beyond BSP.",
+          "x-importance": "required",
+          "x-sources": ["price_list"],
+          "x-extraction": "Car parking, club membership, PLC (park-facing / corner), lease rent, IFMS, power backup. Capture the basis — a ₹300 PLC is per-sq.ft., a ₹6,95,000 parking charge is lump sum.",
+          "x-since": "1.0.0",
+          "items": {
+            "type": "object",
+            "required": ["head", "basis"],
+            "properties": {
+              "head": { "type": "string" },
+              "amount": { "type": "number" },
+              "basis": { "type": "string", "enum": ["lumpsum", "per_sqft", "per_sqm", "slab"] },
+              "note": { "type": "string" }
+            }
+          }
+        },
+        "inclusions_note": { "type": "string", "x-importance": "recommended", "x-sources": ["price_list"], "x-extraction": "The GST / statutory-charges disclaimer, verbatim.", "x-since": "1.0.0" },
+        "source_ref": { "$ref": "#/$defs/provenance" }
+      }
+    },
+
+    "unit_types": {
+      "type": "array",
+      "description": "One entry per distinct saleable configuration. THE core section — everything else is context.",
+      "x-section": "configurations",
+      "x-importance": "required",
+      "x-sources": ["floor_plan_page", "price_list"],
+      "x-extraction": [
+        "Expect a near-1:1 map between brochure floor-plan pages and price-list size rows; a mismatch means a missing plan or a discontinued config.",
+        "Builders name plans by TOWER FAMILY, not by BHK ('Gold/Platinum Palace - 3 BHK'). Capture the family — it is what links a unit to a wing on the master plan.",
+        "Cross-check every super area against the price list. Transposed SQ.M./SQ.FT. columns and stale sizes are common; see the balcony row on Medalleo p.24."
+      ],
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "required": ["key", "bhk", "areas"],
+        "properties": {
+          "key": { "type": "string", "pattern": "^[a-z0-9-]+$", "description": "Stable slug; the tab id and URL hash. Never change once published.", "x-importance": "required", "x-sources": ["derived"], "x-since": "1.0.0" },
+          "tower_family": { "type": "string", "x-importance": "recommended", "x-sources": ["floor_plan_page"], "x-extraction": "Plan page title, e.g. 'DIAMOND PALACE'.", "x-since": "1.0.0" },
+          "bhk": { "type": "integer", "minimum": 1, "maximum": 10, "x-importance": "required", "x-sources": ["floor_plan_page", "price_list"], "x-since": "1.0.0" },
+          "variant": { "type": "string", "description": "'Type I' / 'Unit 2' — disambiguates same-BHK plans in one family.", "x-importance": "optional", "x-sources": ["floor_plan_page"], "x-since": "1.0.0" },
+          "config_label": { "type": "string", "description": "Verbatim from the price list, e.g. '4 BHK + Servant + FL + PR'.", "x-importance": "recommended", "x-sources": ["price_list"], "x-since": "1.0.0" },
+          "extras": {
+            "type": "array",
+            "items": { "type": "string", "enum": ["servant", "study", "family_lounge", "powder_room", "puja", "store", "terrace"] },
+            "description": "Parsed from config_label. Stored as an enum array so it is filterable across projects.",
+            "x-importance": "recommended",
+            "x-sources": ["derived"],
+            "x-extraction": "FL = Family Lounge, PR = Powder Room, S = Servant. Expand the abbreviations.",
+            "x-since": "1.0.0"
+          },
+          "wings": { "type": "array", "items": { "type": "string" }, "description": "Wing/tower numbers this plan applies to. Powers the clickable master plan.", "x-importance": "recommended", "x-sources": ["floor_plan_page"], "x-extraction": "The 'WING NO. 28, 31, 32 & 35' header above the area table.", "x-since": "1.0.0" },
+          "floors": { "type": "string", "x-importance": "optional", "x-sources": ["floor_plan_page"], "x-since": "1.0.0" },
+          "facing": { "type": "string", "x-importance": "optional", "x-sources": ["floor_plan_page"], "x-since": "1.0.0" },
+          "is_full_floor": { "type": "boolean", "default": false, "x-importance": "optional", "x-sources": ["floor_plan_page"], "x-extraction": "True when the plan page shows a whole floor plate as one apartment.", "x-since": "1.0.0" },
+
+          "areas": {
+            "type": "object",
+            "required": ["super"],
+            "description": "Store BOTH units exactly as printed. Do not convert — divergence between sources is signal, not noise.",
+            "x-importance": "required",
+            "x-sources": ["floor_plan_page"],
+            "x-extraction": "The 4-row area table on each plan page: SUPER / BUILT UP / CARPET / BALCONY, in SQ.M. and SQ.FT. columns. Sanity-check: carpet < built_up < super, and balcony sq.m. must be far smaller than the flat's sq.m.",
+            "x-since": "1.0.0",
+            "properties": {
+              "super": { "$ref": "#/$defs/area_pair" },
+              "built_up": { "$ref": "#/$defs/area_pair" },
+              "carpet": { "$ref": "#/$defs/area_pair" },
+              "balcony": { "$ref": "#/$defs/area_pair" }
+            }
+          },
+
+          "price": {
+            "type": "object",
+            "x-importance": "recommended",
+            "x-sources": ["price_list", "derived"],
+            "x-extraction": "indicative_total = bsp_per_sqft × areas.super.sqft. Always set computed: true — it is not a builder quote.",
+            "x-since": "1.0.0",
+            "properties": {
+              "basis": { "type": "string", "enum": ["super", "carpet", "built_up"] },
+              "bsp_per_sqft": { "type": "number" },
+              "indicative_total": { "type": "number" },
+              "computed": { "type": "boolean", "default": true }
+            }
+          },
+
+          "media": {
+            "type": "object",
+            "x-importance": "required",
+            "x-since": "1.0.0",
+            "properties": {
+              "plan_2d": { "type": "array", "items": { "$ref": "#/$defs/media_ref" }, "x-importance": "required", "x-sources": ["floor_plan_page"], "x-extraction": "Crop the plan artwork off the page and store the normalized bbox in ProjectAsset.origin so the crop is reproducible.", "x-since": "1.0.0" },
+              "plan_3d": { "type": "array", "items": { "$ref": "#/$defs/media_ref" }, "x-importance": "optional", "x-sources": ["builder_direct", "derived"], "x-extraction": "NOT present in brochures — brochures carry 2D plans only. Produced separately (isometric render commissioned from the 2D plan). Never a publishing gate.", "x-since": "1.0.0" },
+              "renders": { "type": "array", "items": { "$ref": "#/$defs/media_ref" }, "x-importance": "optional", "x-sources": ["brochure"], "x-since": "1.0.0" },
+              "tour_url": { "type": "string", "format": "uri", "description": "Matterport / kuula 360° embed.", "x-importance": "optional", "x-sources": ["builder_direct"], "x-since": "1.0.0" }
+            }
+          },
+
+          "availability": { "type": "string", "enum": ["available", "sold_out", "on_request"], "default": "on_request", "x-importance": "optional", "x-sources": ["builder_direct"], "x-since": "1.0.0" },
+          "source_ref": { "$ref": "#/$defs/provenance" }
+        }
+      }
+    },
+
+    "amenities": {
+      "type": "array",
+      "description": "Grouped, never one flat list — grouping is what makes 40 amenities readable.",
+      "x-section": "amenities",
+      "x-importance": "recommended",
+      "x-sources": ["brochure"],
+      "x-extraction": "Brochure amenity spreads. Keep the builder's own grouping (Landscape / Clubhouse / Terrace) and record access restrictions.",
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "required": ["group", "items"],
+        "properties": {
+          "group": { "type": "string" },
+          "items": { "type": "array", "items": { "type": "string" } },
+          "access": { "type": "string", "description": "e.g. 'all_residents' | 'iconic_owners_only'" },
+          "icon": { "type": "string" }
+        }
+      }
+    },
+
+    "clubs": {
+      "type": "array",
+      "x-section": "clubs",
+      "x-importance": "optional",
+      "x-sources": ["brochure", "builder_direct"],
+      "x-extraction": "Where a project has tiered clubs, capture the access rule explicitly — 'owner-only' must never be flattened into a generic amenity.",
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "size_sqft": { "type": "number" },
+          "count": { "type": "integer" },
+          "access": { "type": "string" },
+          "note": { "type": "string" },
+          "media": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/media_ref" },
+            "description": "Photo(s) of this specific club. Optional — many gallery photos exist per project but none are structurally tied to a club without this; do not guess the link from a caption match, leave it empty instead.",
+            "x-since": "1.2.0"
+          }
+        }
+      }
+    },
+
+    "connectivity": {
+      "type": "array",
+      "description": "Distance/time to landmarks. High-value SEO content.",
+      "x-section": "location",
+      "x-importance": "recommended",
+      "x-sources": ["brochure", "portal"],
+      "x-extraction": "The brochure's connectivity spread. Builder minutes are optimistic — prefer distance_km where both are given.",
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string" },
+          "category": { "type": "string", "enum": ["metro", "road", "airport", "school", "hospital", "mall", "office", "railway", "other"] },
+          "minutes": { "type": "number" },
+          "distance_km": { "type": "number" }
+        }
+      }
+    },
+
+    "specifications": {
+      "type": "array",
+      "description": "Fittings and finishes, per room.",
+      "x-section": "specifications",
+      "x-importance": "recommended",
+      "x-sources": ["brochure"],
+      "x-extraction": "Usually a dense table on the second-to-last brochure page. Often absent from designer brochures — then ask the builder.",
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "properties": {
+          "room": { "type": "string" },
+          "items": { "type": "array", "items": { "type": "object", "properties": { "label": { "type": "string" }, "value": { "type": "string" } } } }
+        }
+      }
+    },
+
+    "gallery": { "type": "array", "items": { "$ref": "#/$defs/media_ref" }, "x-section": "gallery", "x-importance": "recommended", "x-sources": ["brochure"], "x-since": "1.0.0" },
+    "master_plan": { "type": "array", "items": { "$ref": "#/$defs/media_ref" }, "x-section": "master_plan", "x-importance": "recommended", "x-sources": ["master_plan_page"], "x-extraction": "The site-plan page. Worth extra care — wing numbers on it link to unit_types[].wings.", "x-since": "1.0.0" },
+    "location_map": { "type": "array", "items": { "$ref": "#/$defs/media_ref" }, "x-section": "location", "x-importance": "optional", "x-sources": ["brochure"], "x-since": "1.0.0" },
+
+    "custom_sections": {
+      "type": "array",
+      "description": "Escape hatch for the per-builder long tail. Rendered by primitive renderers — needs no schema change and no frontend code.",
+      "x-section": "*",
+      "x-importance": "optional",
+      "x-sources": ["brochure"],
+      "x-extraction": "Use for one-off blocks ('Vastu Compliance', 'NRI Corner'). If the same custom section shows up on three projects, promote it to a real field in this file.",
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "required": ["type", "data"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "type": { "type": "string", "enum": ["kv", "table", "cards", "gallery", "stats", "prose", "list"] },
+          "order": { "type": "number" },
+          "data": {}
+        }
+      }
+    },
+
+    "section_order": { "type": "array", "items": { "type": "string" }, "description": "Per-project override of the default section order.", "x-importance": "optional", "x-sources": ["derived"], "x-since": "1.0.0" },
+    "hidden_sections": { "type": "array", "items": { "type": "string" }, "description": "Section ids to suppress for this project.", "x-importance": "optional", "x-sources": ["derived"], "x-since": "1.0.0" },
+
+    "sources": {
+      "type": "array",
+      "description": "The traceability register. Every contested fact points at one of these.",
+      "x-section": "sources",
+      "x-importance": "required",
+      "x-sources": ["derived"],
+      "x-extraction": "One entry per document/portal actually used, with the date it was valid. This is what lets the page say 'Possession: Sep 2029 (portal data, Aug 2026)' instead of asserting it.",
+      "x-since": "1.0.0",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "type"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "type": { "type": "string", "enum": ["document", "brochure", "price_list", "portal", "rera", "manual"] },
+          "as_of": { "type": "string" },
+          "url": { "type": "string", "description": "Either an external citation URL (e.g. a portal listing) or, if the source itself was uploaded, a bare object storage key resolved the same way as media_ref.url." }
+        }
+      }
+    },
+
+    "updated_by": { "type": "string", "x-importance": "recommended", "x-sources": ["derived"], "x-since": "1.0.0" }
+  },
+
+  "$defs": {
+    "measure": {
+      "type": "object",
+      "description": "Any physical quantity. Never store a bare number, never store '10 acres' as a string.",
+      "required": ["value", "unit"],
+      "properties": { "value": { "type": "number" }, "unit": { "type": "string", "enum": ["sqft", "sqm", "acre", "hectare"] } }
+    },
+    "area_pair": {
+      "type": "object",
+      "description": "Both units, exactly as printed on the source sheet.",
+      "properties": { "sqm": { "type": "number", "minimum": 0 }, "sqft": { "type": "number", "minimum": 0 } }
+    },
+    "media_ref": {
+      "type": "object",
+      "description": "url is an object storage key relative to the CDN bucket (e.g. 'media/UPRERAPRJ125561/exterior-hero.webp'), not a domain. The API composes it into an absolute CDN URL at read time (app.cdn-base-url in real_estate_backend) so switching storage providers later never requires rewriting stored content. A value already starting with 'http://' or 'https://' is treated as an external asset and passed through unchanged.",
+      "required": ["url"],
+      "properties": {
+        "url": { "type": "string" },
+        "label": { "type": "string" },
+        "caption": { "type": "string" },
+        "alt": { "type": "string", "description": "Required for SEO and a11y on every public image." },
+        "width": { "type": "integer", "description": "Intrinsic pixel width. Required by the frontend image pipeline to reserve space before load — omitting it causes cumulative layout shift, which is a ranking signal." },
+        "height": { "type": "integer", "description": "Intrinsic pixel height." },
+        "order": { "type": "number" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Attach to any fact that can be contested across sources.",
+      "properties": {
+        "source_id": { "type": "string" },
+        "page": { "type": "number" },
+        "as_of": { "type": "string" },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"], "default": "high" },
+        "computed": { "type": "boolean", "default": false },
+        "note": { "type": "string", "description": "Rendered on the page when confidence is not high." }
+      }
+    }
+  }
+}

@@ -1,0 +1,979 @@
+{
+  "registration_no": "UPRERAPRJ125561",
+  "slug": "ace-mahagun-medalleo-sector-107-noida",
+  "published": true,
+  "updated_by": "varun",
+  "marketing": {
+    "display_name": "ACE Mahagun Medalleo",
+    "tagline": "3 & 4 BHK Luxury Residences & Penthouses",
+    "locality": "Sector 107",
+    "city": "Noida",
+    "status": "under_construction",
+    "possession_on": "2029-09",
+    "highlights": [
+      "Art Deco architectural expression",
+      "Two exclusive clubhouses",
+      "Sector 101 Metro — 5 min",
+      "Gold certified living"
+    ]
+  },
+  "scale": {
+    "land_area": {
+      "value": 10,
+      "unit": "acre"
+    },
+    "total_units": 686,
+    "tower_count": 6,
+    "green_area": {
+      "value": 28407.52,
+      "unit": "sqm"
+    },
+    "green_breakup": [
+      {
+        "name": "Commercial Green Area",
+        "sqm": 2973.85,
+        "acres": 0.73
+      },
+      {
+        "name": "Low Rise Green Area",
+        "sqm": 4595.41,
+        "acres": 1.14
+      },
+      {
+        "name": "Diamond Green Area",
+        "sqm": 3288.78,
+        "acres": 0.81
+      },
+      {
+        "name": "Emerald Green Area",
+        "sqm": 3688.22,
+        "acres": 0.91
+      },
+      {
+        "name": "Garnet & Sapphire Green Area",
+        "sqm": 8242.59,
+        "acres": 2.03
+      },
+      {
+        "name": "Gold Platinum Green Area",
+        "sqm": 5618.67,
+        "acres": 1.38
+      }
+    ]
+  },
+  "pricing": {
+    "area_basis": "super",
+    "bsp": {
+      "amount": 20995,
+      "unit": "per_sqft",
+      "wef": "2026-04-12"
+    },
+    "starting_price": {
+      "amount": 52487500,
+      "display": "₹5.25 Cr*"
+    },
+    "payment_plan": {
+      "headline": "25:25:25:25",
+      "milestones": [
+        {
+          "label": "Booking Amount",
+          "percent": 10
+        },
+        {
+          "label": "Within 60 Days of Booking",
+          "percent": 15
+        },
+        {
+          "label": "After Slab Casting of 15th Floor",
+          "percent": 25
+        },
+        {
+          "label": "At Completion of Structure",
+          "percent": 25
+        },
+        {
+          "label": "On Offer of Possession",
+          "percent": 25,
+          "note": "+ other charges"
+        }
+      ]
+    },
+    "charges": [
+      {
+        "head": "Car Parking",
+        "amount": 695000,
+        "basis": "lumpsum"
+      },
+      {
+        "head": "Back-to-Back Car Parking",
+        "amount": 1195000,
+        "basis": "lumpsum"
+      },
+      {
+        "head": "Club Membership",
+        "amount": 500000,
+        "basis": "lumpsum"
+      },
+      {
+        "head": "Park Facing PLC",
+        "amount": 300,
+        "basis": "per_sqft"
+      },
+      {
+        "head": "Corner PLC",
+        "amount": 300,
+        "basis": "per_sqft"
+      },
+      {
+        "head": "Lease Rent",
+        "amount": 90,
+        "basis": "per_sqft"
+      },
+      {
+        "head": "Free Power Backup",
+        "basis": "slab",
+        "note": "Up to 3,000 sq.ft.: 10 KVA | 3,001–4,500: 12.5 KVA | 4,501+: 15 KVA"
+      }
+    ],
+    "inclusions_note": "On possession, amounts may additionally include interest-free maintenance security, replenishment fund, power-backup and electricity meter charges, 24 months' advance club usage, IGL, FTTH, and water/sewerage connection charges. GST and statutory charges apply as per prevailing rules.",
+    "source_ref": {
+      "source_id": "pricelist_2026",
+      "as_of": "2026-04-12",
+      "confidence": "high"
+    }
+  },
+  "sources": [
+    {
+      "id": "brochure_2025",
+      "label": "ACE Mahagun Medalleo builder brochure",
+      "type": "brochure",
+      "as_of": "2025-10-07"
+    },
+    {
+      "id": "pricelist_2026",
+      "label": "Builder price list w.e.f. 12.04.2026",
+      "type": "price_list",
+      "as_of": "2026-04-12"
+    },
+    {
+      "id": "housing_2026",
+      "label": "Housing.com project listing",
+      "type": "portal",
+      "as_of": "2026-08-08",
+      "url": "https://housing.com"
+    }
+  ],
+  "unit_types": [
+    {
+      "key": "gold-platinum-3bhk-2500",
+      "tower_family": "Gold / Platinum Palace",
+      "bhk": 3,
+      "config_label": "3 BHK + Servant",
+      "extras": [
+        "servant"
+      ],
+      "wings": [
+        "29",
+        "30",
+        "33",
+        "34"
+      ],
+      "areas": {
+        "super": {
+          "sqm": 232.25,
+          "sqft": 2500
+        },
+        "built_up": {
+          "sqm": 166.08,
+          "sqft": 1787.68
+        },
+        "carpet": {
+          "sqm": 122.04,
+          "sqft": 1313.63
+        },
+        "balcony": {
+          "sqm": 37.02,
+          "sqft": 398.48
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 52487500,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/gold-platinum-3bhk-2500-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — Gold/Platinum Palace 3 BHK, 2500 sq.ft.",
+            "width": 1154,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 20,
+        "confidence": "high"
+      }
+    },
+    {
+      "key": "gold-platinum-3bhk-2575",
+      "tower_family": "Gold / Platinum Palace",
+      "bhk": 3,
+      "config_label": "3 BHK + Servant",
+      "extras": [
+        "servant"
+      ],
+      "wings": [
+        "28",
+        "31",
+        "32",
+        "35"
+      ],
+      "areas": {
+        "super": {
+          "sqm": 239.22,
+          "sqft": 2575
+        },
+        "built_up": {
+          "sqm": 171.61,
+          "sqft": 1847.21
+        },
+        "carpet": {
+          "sqm": 124.99,
+          "sqft": 1345.39
+        },
+        "balcony": {
+          "sqm": 38.43,
+          "sqft": 413.66
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 54062125,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/gold-platinum-3bhk-2575-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — Gold/Platinum Palace 3 BHK, 2575 sq.ft.",
+            "width": 1154,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 19,
+        "confidence": "high"
+      }
+    },
+    {
+      "key": "diamond-4bhk-t1-2970",
+      "tower_family": "Diamond Palace",
+      "bhk": 4,
+      "variant": "Type I",
+      "config_label": "4 BHK + Servant",
+      "extras": [
+        "servant"
+      ],
+      "wings": [
+        "12",
+        "14"
+      ],
+      "areas": {
+        "super": {
+          "sqm": 275.92,
+          "sqft": 2970
+        },
+        "built_up": {
+          "sqm": 214.1,
+          "sqft": 2304.57
+        },
+        "carpet": {
+          "sqm": 155.9,
+          "sqft": 1678.1
+        },
+        "balcony": {
+          "sqm": 49.61,
+          "sqft": 534.1
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 62355150,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/diamond-4bhk-t1-2970-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — Diamond Palace 4 BHK Type I, 2970 sq.ft.",
+            "width": 1154,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 22,
+        "confidence": "high"
+      }
+    },
+    {
+      "key": "diamond-4bhk-t1-3000",
+      "tower_family": "Diamond Palace",
+      "bhk": 4,
+      "variant": "Type I",
+      "config_label": "4 BHK + Servant",
+      "extras": [
+        "servant"
+      ],
+      "wings": [
+        "11",
+        "15"
+      ],
+      "areas": {
+        "super": {
+          "sqm": 278.7,
+          "sqft": 3000
+        },
+        "built_up": {
+          "sqm": 216.84,
+          "sqft": 2334.06
+        },
+        "carpet": {
+          "sqm": 156.63,
+          "sqft": 1685.96
+        },
+        "balcony": {
+          "sqm": 50.55,
+          "sqft": 544.12
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 62985000,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/diamond-4bhk-t1-3000-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — Diamond Palace 4 BHK Type I, 3000 sq.ft.",
+            "width": 1154,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 21,
+        "confidence": "high"
+      }
+    },
+    {
+      "key": "sapphire-garnet-4bhk-t2-3550",
+      "tower_family": "Sapphire / Garnet Palace",
+      "bhk": 4,
+      "variant": "Type II",
+      "config_label": "4 BHK + Servant + FL + PR",
+      "extras": [
+        "servant",
+        "family_lounge",
+        "powder_room"
+      ],
+      "wings": [
+        "21",
+        "22",
+        "25",
+        "26"
+      ],
+      "areas": {
+        "super": {
+          "sqm": 329.8,
+          "sqft": 3550
+        },
+        "built_up": {
+          "sqm": 260.39,
+          "sqft": 2802.83
+        },
+        "carpet": {
+          "sqm": 200.66,
+          "sqft": 2159.9
+        },
+        "balcony": {
+          "sqm": 52.71,
+          "sqft": 567.37
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 74532250,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/sapphire-garnet-4bhk-t2-3550-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — Sapphire/Garnet Palace 4 BHK Type II, 3550 sq.ft.",
+            "width": 1154,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 24,
+        "confidence": "medium",
+        "note": "Brochure prints the balcony row as 567.37 SQ.M. / 52.71 SQ.FT. — the two columns are transposed (567 sq.m. of balcony on a 329.80 sq.m. flat is impossible). Stored corrected; verify against the sanctioned plan."
+      }
+    },
+    {
+      "key": "sapphire-garnet-4bhk-t2-3720",
+      "tower_family": "Sapphire / Garnet Palace",
+      "bhk": 4,
+      "variant": "Type II",
+      "config_label": "4 BHK + Servant + FL + PR",
+      "extras": [
+        "servant",
+        "family_lounge",
+        "powder_room"
+      ],
+      "wings": [
+        "20",
+        "23",
+        "24",
+        "27"
+      ],
+      "areas": {
+        "super": {
+          "sqm": 345.59,
+          "sqft": 3720
+        },
+        "built_up": {
+          "sqm": 273.91,
+          "sqft": 2948.36
+        },
+        "carpet": {
+          "sqm": 204.54,
+          "sqft": 2201.66
+        },
+        "balcony": {
+          "sqm": 60.93,
+          "sqft": 655.85
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 78101400,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/sapphire-garnet-4bhk-t2-3720-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — Sapphire/Garnet Palace 4 BHK Type II, 3720 sq.ft.",
+            "width": 1154,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 23,
+        "confidence": "high"
+      }
+    },
+    {
+      "key": "iconic-tower-unit-2",
+      "tower_family": "Iconic Tower",
+      "bhk": 4,
+      "variant": "Unit 2",
+      "config_label": "4 BHK + Study Room + FL + PR",
+      "extras": [
+        "study",
+        "family_lounge",
+        "powder_room"
+      ],
+      "wings": [
+        "17",
+        "18"
+      ],
+      "is_full_floor": true,
+      "areas": {
+        "super": {
+          "sqm": 431.99,
+          "sqft": 4650
+        },
+        "built_up": {
+          "sqm": 326.09,
+          "sqft": 3510
+        },
+        "carpet": {
+          "sqm": 231.39,
+          "sqft": 2490
+        },
+        "balcony": {
+          "sqm": 84.95,
+          "sqft": 915
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 97626750,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/iconic-tower-unit-2-2d.webp",
+            "label": "Full-Floor Plan",
+            "alt": "2D floor plan — Iconic Tower Unit 2, 4650 sq.ft.",
+            "width": 1509,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 26,
+        "confidence": "high"
+      }
+    },
+    {
+      "key": "iconic-tower-unit-1",
+      "tower_family": "Iconic Tower",
+      "bhk": 4,
+      "variant": "Unit 1",
+      "config_label": "4 BHK + Study Room + FL + PR",
+      "extras": [
+        "study",
+        "family_lounge",
+        "powder_room"
+      ],
+      "wings": [
+        "16",
+        "19"
+      ],
+      "is_full_floor": true,
+      "areas": {
+        "super": {
+          "sqm": 443.6,
+          "sqft": 4775
+        },
+        "built_up": {
+          "sqm": 336.43,
+          "sqft": 3621
+        },
+        "carpet": {
+          "sqm": 232.25,
+          "sqft": 2500
+        },
+        "balcony": {
+          "sqm": 91.54,
+          "sqft": 985
+        }
+      },
+      "price": {
+        "basis": "super",
+        "bsp_per_sqft": 20995,
+        "indicative_total": 100251125,
+        "computed": true
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ125561/iconic-tower-unit-1-2d.webp",
+            "label": "Full-Floor Plan",
+            "alt": "2D floor plan — Iconic Tower Unit 1, 4775 sq.ft.",
+            "width": 1509,
+            "height": 1600
+          }
+        ]
+      },
+      "source_ref": {
+        "source_id": "brochure_2025",
+        "page": 25,
+        "confidence": "high"
+      }
+    }
+  ],
+  "amenities": [
+    {
+      "group": "Landscape Amenities",
+      "access": "all_residents",
+      "items": [
+        "Dense Forest Trail",
+        "Celebration Lawn",
+        "Swimming Pool With Deck",
+        "Relaxing Cabana",
+        "Kids Pool & Play Area",
+        "Relaxing Pavilion"
+      ]
+    },
+    {
+      "group": "Clubhouse Amenities",
+      "access": "all_residents",
+      "items": [
+        "Grand Arrival Lobby",
+        "Rejuvenating Spa",
+        "All-Weather Swimming Pool",
+        "State-of-the-Art Gym",
+        "Sports Arena",
+        "Gaming Zone",
+        "Squash Court"
+      ]
+    },
+    {
+      "group": "Terrace Amenities",
+      "access": "iconic_owners_only",
+      "items": [
+        "Infinity Swimming Pool",
+        "Recreational Lounge and Sit-Out Area",
+        "Barbeque Area"
+      ]
+    },
+    {
+      "group": "Ground Level Amenities",
+      "access": "iconic_owners_only",
+      "items": [
+        "Waiting Lounge",
+        "Cigar Lounge",
+        "Mini Theatre",
+        "Café & Dining"
+      ]
+    }
+  ],
+  "clubs": [
+    {
+      "name": "Grand Clubhouse",
+      "access": "all_residents",
+      "note": "Ground-level clubhouse — grand arrival lobby, spa, all-weather swimming pool, gym, sports arena, gaming zone, squash court."
+    },
+    {
+      "name": "Iconic Club",
+      "access": "iconic_owners_only",
+      "note": "Second, exclusive clubhouse for Iconic Tower owners — terrace infinity pool, recreational lounge, barbeque area, waiting lounge, cigar lounge, mini theatre, café & dining."
+    }
+  ],
+  "connectivity": [
+    {
+      "name": "Noida-Greater Noida Expressway",
+      "category": "road",
+      "distance_km": 3,
+      "minutes": 8
+    },
+    {
+      "name": "FNG Expressway",
+      "category": "road",
+      "distance_km": 9,
+      "minutes": 10
+    },
+    {
+      "name": "Yamuna Expressway",
+      "category": "road",
+      "distance_km": 20,
+      "minutes": 30
+    },
+    {
+      "name": "DND Flyover",
+      "category": "road",
+      "distance_km": 11,
+      "minutes": 15
+    },
+    {
+      "name": "Sector 101 Metro Station (Aqua Line)",
+      "category": "metro",
+      "distance_km": 3.4,
+      "minutes": 7
+    },
+    {
+      "name": "Sector 76 Metro Station (Aqua Line)",
+      "category": "metro",
+      "distance_km": 3.1,
+      "minutes": 6
+    },
+    {
+      "name": "Sector 52 Metro Station (Blue Line)",
+      "category": "metro",
+      "distance_km": 5.1,
+      "minutes": 10
+    },
+    {
+      "name": "IGI International Airport",
+      "category": "airport",
+      "distance_km": 34,
+      "minutes": 68
+    },
+    {
+      "name": "Noida International Airport",
+      "category": "airport",
+      "distance_km": 60,
+      "minutes": 60
+    },
+    {
+      "name": "Infosys (Corporate & IT Corridor)",
+      "category": "office",
+      "minutes": 15
+    },
+    {
+      "name": "Yatharth Super Speciality Hospital",
+      "category": "hospital",
+      "minutes": 9
+    },
+    {
+      "name": "Starling Mall",
+      "category": "mall",
+      "minutes": 5
+    },
+    {
+      "name": "Pathways School",
+      "category": "school",
+      "minutes": 6
+    }
+  ],
+  "gallery": [
+    {
+      "url": "media/UPRERAPRJ125561/exterior-hero.webp",
+      "label": "Medalleo at Dusk",
+      "alt": "ACE Mahagun Medalleo towers viewed from the arterial road at dusk",
+      "width": 2437,
+      "height": 1434,
+      "order": 1
+    },
+    {
+      "url": "media/UPRERAPRJ125561/exterior-towers-day.webp",
+      "label": "Towers — Daytime Elevation",
+      "alt": "ACE Mahagun Medalleo residential towers, daytime elevation view",
+      "width": 895,
+      "height": 550,
+      "order": 2
+    },
+    {
+      "url": "media/UPRERAPRJ125561/iconic-club-exterior.webp",
+      "label": "Iconic Club",
+      "alt": "Iconic Club exterior — exclusive clubhouse for Iconic Tower owners",
+      "width": 1021,
+      "height": 649,
+      "order": 3
+    },
+    {
+      "url": "media/UPRERAPRJ125561/grand-arrival-club-lobby.webp",
+      "label": "Grand Arrival Club Lobby",
+      "alt": "Grand arrival lobby of the Iconic Club",
+      "width": 1013,
+      "height": 649,
+      "order": 4
+    },
+    {
+      "url": "media/UPRERAPRJ125561/sports-arena.webp",
+      "label": "Sports Arena",
+      "alt": "Sports arena with billiards table, Iconic Club",
+      "width": 1012,
+      "height": 649,
+      "order": 5
+    },
+    {
+      "url": "media/UPRERAPRJ125561/state-of-the-art-gymnasium.webp",
+      "label": "State-of-the-Art Gymnasium",
+      "alt": "Fully equipped gymnasium, Iconic Club",
+      "width": 1021,
+      "height": 643,
+      "order": 6
+    },
+    {
+      "url": "media/UPRERAPRJ125561/squash-court.webp",
+      "label": "Squash Court",
+      "alt": "Indoor squash court, Iconic Club",
+      "width": 1013,
+      "height": 643,
+      "order": 7
+    },
+    {
+      "url": "media/UPRERAPRJ125561/rejuvenating-spa.webp",
+      "label": "Rejuvenating Spa",
+      "alt": "Spa treatment room, Iconic Club",
+      "width": 1012,
+      "height": 643,
+      "order": 8
+    },
+    {
+      "url": "media/UPRERAPRJ125561/infinity-swimming-pool.webp",
+      "label": "Infinity Swimming Pool",
+      "alt": "Infinity-edge swimming pool on the Iconic Tower terrace",
+      "width": 1021,
+      "height": 649,
+      "order": 9
+    },
+    {
+      "url": "media/UPRERAPRJ125561/recreational-lounge-sit-out.webp",
+      "label": "Recreational Lounge and Sit-Out Area",
+      "alt": "Recreational lounge and sit-out area, Iconic Tower terrace",
+      "width": 1013,
+      "height": 649,
+      "order": 10
+    },
+    {
+      "url": "media/UPRERAPRJ125561/barbeque-area.webp",
+      "label": "Barbeque Area",
+      "alt": "Barbeque area, Iconic Tower terrace",
+      "width": 1012,
+      "height": 649,
+      "order": 11
+    },
+    {
+      "url": "media/UPRERAPRJ125561/waiting-lounge.webp",
+      "label": "Waiting Lounge",
+      "alt": "Waiting lounge, Iconic Tower ground level",
+      "width": 1021,
+      "height": 643,
+      "order": 12
+    },
+    {
+      "url": "media/UPRERAPRJ125561/mini-theatre.webp",
+      "label": "Mini Theatre",
+      "alt": "Mini theatre, Iconic Tower ground level",
+      "width": 1013,
+      "height": 643,
+      "order": 13
+    },
+    {
+      "url": "media/UPRERAPRJ125561/cafe-and-dining.webp",
+      "label": "Cafe and Dining",
+      "alt": "Cafe and dining area, Iconic Tower ground level",
+      "width": 1012,
+      "height": 643,
+      "order": 14
+    },
+    {
+      "url": "media/UPRERAPRJ125561/celebration-lawn.webp",
+      "label": "Celebration Lawn",
+      "alt": "Celebration lawn amid the landscaped greens",
+      "width": 1021,
+      "height": 649,
+      "order": 15
+    },
+    {
+      "url": "media/UPRERAPRJ125561/relaxing-cabana.webp",
+      "label": "Relaxing Cabana",
+      "alt": "Relaxing cabanas beside the landscape pool",
+      "width": 1013,
+      "height": 649,
+      "order": 16
+    },
+    {
+      "url": "media/UPRERAPRJ125561/dense-forest-trail.webp",
+      "label": "Dense Forest Trail",
+      "alt": "Dense forest walking trail through the landscaped greens",
+      "width": 1012,
+      "height": 649,
+      "order": 17
+    },
+    {
+      "url": "media/UPRERAPRJ125561/swimming-pool-with-deck.webp",
+      "label": "Swimming Pool With Deck",
+      "alt": "Landscape swimming pool with deck",
+      "width": 1021,
+      "height": 643,
+      "order": 18
+    },
+    {
+      "url": "media/UPRERAPRJ125561/relaxation-pavilion.webp",
+      "label": "Relaxation Pavilion",
+      "alt": "Relaxation pavilion in the landscaped greens",
+      "width": 1013,
+      "height": 643,
+      "order": 19
+    },
+    {
+      "url": "media/UPRERAPRJ125561/kids-pool-and-play-area.webp",
+      "label": "Kids Pool and Play Area",
+      "alt": "Kids pool and play area",
+      "width": 1012,
+      "height": 643,
+      "order": 20
+    },
+    {
+      "url": "media/UPRERAPRJ125561/grand-living-with-lounge.webp",
+      "label": "Grand Living With Lounge",
+      "alt": "Grand living room with lounge, show apartment",
+      "width": 1021,
+      "height": 649,
+      "order": 21
+    },
+    {
+      "url": "media/UPRERAPRJ125561/living-room-foyer.webp",
+      "label": "Living Room Foyer",
+      "alt": "Living room foyer, show apartment",
+      "width": 1013,
+      "height": 649,
+      "order": 22
+    },
+    {
+      "url": "media/UPRERAPRJ125561/master-bedroom-interior.webp",
+      "label": "Master Bedroom",
+      "alt": "Master bedroom, show apartment",
+      "width": 1012,
+      "height": 649,
+      "order": 23
+    },
+    {
+      "url": "media/UPRERAPRJ125561/grand-entrance-interior.webp",
+      "label": "The Grand Entrance",
+      "alt": "Grand entrance foyer, show apartment",
+      "width": 1021,
+      "height": 643,
+      "order": 24
+    },
+    {
+      "url": "media/UPRERAPRJ125561/kids-bedroom-interior.webp",
+      "label": "Kids Bedroom",
+      "alt": "Kids bedroom, show apartment",
+      "width": 1013,
+      "height": 643,
+      "order": 25
+    },
+    {
+      "url": "media/UPRERAPRJ125561/kitchen-interior.webp",
+      "label": "Kitchen",
+      "alt": "Kitchen, show apartment",
+      "width": 1012,
+      "height": 643,
+      "order": 26
+    }
+  ],
+  "master_plan": [
+    {
+      "url": "media/UPRERAPRJ125561/master-plan.webp",
+      "label": "Master Plan — Tower & Unit Plan",
+      "alt": "Site master plan showing tower/wing layout across the project",
+      "width": 3398,
+      "height": 2450
+    }
+  ],
+  "location_map": [
+    {
+      "url": "media/UPRERAPRJ125561/location-map.webp",
+      "label": "Connectivity Map",
+      "alt": "Map showing Medalleo's connectivity to Noida, Ghaziabad and Greater Noida road and metro network",
+      "width": 3398,
+      "height": 2450
+    }
+  ]
+}

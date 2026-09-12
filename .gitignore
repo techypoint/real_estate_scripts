@@ -1,0 +1,18 @@
+.env
+.env.local
+*.env
+!.env.example
+
+node_modules/
+npm-debug.log*
+
+.venv/
+__pycache__/
+*.pyc
+
+# data/media/ is deliberately not ignored — derived from source brochure PDFs
+# outside the repo, currently the only copy of that extraction work, small
+# enough to track directly. Move to object storage (and ignore here) before
+# it outgrows git.
+
+.DS_Store

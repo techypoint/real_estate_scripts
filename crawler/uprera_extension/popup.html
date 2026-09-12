@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font: 13px/1.4 sans-serif; width: 240px; margin: 0; padding: 12px; color: #111827; }
+    h1 { font-size: 14px; margin: 0 0 8px; }
+    .count { font-size: 22px; font-weight: bold; margin: 4px 0 10px; }
+    button { display: block; width: 100%; margin: 6px 0; padding: 7px; border: 0; border-radius: 5px;
+             cursor: pointer; color: #fff; font-size: 13px; }
+    #expJson { background: #2563eb; } #expCsv { background: #059669; } #clear { background: #6b7280; }
+    .hint { color: #6b7280; font-size: 11px; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <h1>UP-RERA Collector</h1>
+  <div class="count"><span id="count">0</span> projects</div>
+  <button id="expJson">Export JSON</button>
+  <button id="expCsv">Export CSV</button>
+  <button id="clear">Clear all</button>
+  <div class="hint">Open project detail pages normally — each is saved automatically. Then export here.</div>
+  <script src="common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
