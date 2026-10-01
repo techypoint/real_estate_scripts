@@ -25,6 +25,8 @@
  *   node crons/draft_from_queue.mjs
  *   node crons/draft_from_queue.mjs --dry-run   # show the oldest pending topic, claim/trigger nothing
  */
+import { dashboardFetch } from "../lib/dashboardApi.mjs";
+
 const DASHBOARD_URL = process.env.DASHBOARD_URL ?? "http://127.0.0.1:4000";
 const PIPELINE_NAME = "Real Estate Content · Draft From Queue";
 const dryRun = process.argv.includes("--dry-run");
@@ -40,7 +42,7 @@ function buildTriggerInput(topic) {
 }
 
 async function findPipelineId() {
-  const res = await fetch(`${DASHBOARD_URL}/api/pipelines`);
+  const res = await dashboardFetch("/api/pipelines");
   if (!res.ok) throw new Error(`GET /api/pipelines -> ${res.status}`);
   const pipelines = await res.json();
   const match = pipelines.find((p) => p.name === PIPELINE_NAME);
@@ -53,21 +55,21 @@ async function findPipelineId() {
 }
 
 async function claimOldestPendingTopic() {
-  const res = await fetch(`${DASHBOARD_URL}/api/topic-queue/claim`, { method: "POST" });
+  const res = await dashboardFetch("/api/topic-queue/claim", { method: "POST" });
   if (!res.ok) throw new Error(`POST /api/topic-queue/claim -> ${res.status}`);
   const { claimed } = await res.json();
   return claimed;
 }
 
 async function peekOldestPendingTopic() {
-  const res = await fetch(`${DASHBOARD_URL}/api/topic-queue?status=pending`);
+  const res = await dashboardFetch("/api/topic-queue?status=pending");
   if (!res.ok) throw new Error(`GET /api/topic-queue?status=pending -> ${res.status}`);
   const pending = await res.json();
   return pending[0] ?? null; // already sorted oldest-first
 }
 
 async function triggerRun(pipelineId, triggerInput) {
-  const res = await fetch(`${DASHBOARD_URL}/api/pipelines/${pipelineId}/runs`, {
+  const res = await dashboardFetch(`/api/pipelines/${pipelineId}/runs`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ triggerInput }),
@@ -81,7 +83,7 @@ async function recordRunId(topicId, runId) {
   // Best-effort — see setTopicQueueRunId's own comment: this is bookkeeping
   // for later visibility, not required for the claim's own correctness.
   try {
-    const res = await fetch(`${DASHBOARD_URL}/api/topic-queue/${topicId}`, {
+    const res = await dashboardFetch(`/api/topic-queue/${topicId}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ runId }),

@@ -34,6 +34,7 @@
  *   node crons/listing_content.mjs --dry-run   # find candidates, print them, write nothing, trigger nothing
  */
 import { connect, close, loadEnv, COL } from "../lib/db.mjs";
+import { dashboardFetch } from "../lib/dashboardApi.mjs";
 
 const DASHBOARD_URL = process.env.DASHBOARD_URL ?? "http://127.0.0.1:4000";
 const FRONTEND_URL = process.env.FRONTEND_URL ?? "http://localhost:3000";
@@ -74,21 +75,21 @@ function buildTriggerInput(project) {
   return lines.join("\n");
 }
 
-async function findPipelineId(dashboardUrl) {
-  const res = await fetch(`${dashboardUrl}/api/pipelines`);
+async function findPipelineId() {
+  const res = await dashboardFetch("/api/pipelines");
   if (!res.ok) throw new Error(`GET /api/pipelines -> ${res.status}`);
   const pipelines = await res.json();
   const match = pipelines.find((p) => p.name === PIPELINE_NAME);
   if (!match) {
     throw new Error(
-      `No pipeline named "${PIPELINE_NAME}" found on ${dashboardUrl}. Run scripts/seed-content-pipeline.mjs in agentic_ai_workflow first.`,
+      `No pipeline named "${PIPELINE_NAME}" found on ${DASHBOARD_URL}. Run scripts/seed-content-pipeline.mjs in agentic_ai_workflow first.`,
     );
   }
   return match.id;
 }
 
-async function triggerRun(dashboardUrl, pipelineId, triggerInput) {
-  const res = await fetch(`${dashboardUrl}/api/pipelines/${pipelineId}/runs`, {
+async function triggerRun(pipelineId, triggerInput) {
+  const res = await dashboardFetch(`/api/pipelines/${pipelineId}/runs`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ triggerInput }),
@@ -138,7 +139,7 @@ async function main() {
 
     if (candidates.length === 0) return;
 
-    const pipelineId = dryRun ? null : await findPipelineId(DASHBOARD_URL);
+    const pipelineId = dryRun ? null : await findPipelineId();
 
     for (const project of candidates) {
       const triggerInput = buildTriggerInput(project);
@@ -147,7 +148,7 @@ async function main() {
 
       if (dryRun) continue;
 
-      const run = await triggerRun(DASHBOARD_URL, pipelineId, triggerInput);
+      const run = await triggerRun(pipelineId, triggerInput);
       console.log(`started run ${run.id}`);
 
       await checkpoints.updateOne(

@@ -17,6 +17,7 @@
  *   node crons/daily_topic_digest.mjs --dry-run   # resolve the pipeline, print the request, POST nothing
  */
 import { loadEnv } from "../lib/db.mjs";
+import { dashboardFetch } from "../lib/dashboardApi.mjs";
 
 loadEnv();
 
@@ -35,7 +36,7 @@ function buildTriggerInput() {
 }
 
 async function findPipelineId() {
-  const res = await fetch(`${DASHBOARD_URL}/api/pipelines`);
+  const res = await dashboardFetch("/api/pipelines");
   if (!res.ok) throw new Error(`GET /api/pipelines -> ${res.status}`);
   const pipelines = await res.json();
   const match = pipelines.find((p) => p.name === PIPELINE_NAME);
@@ -59,7 +60,7 @@ async function main() {
     return;
   }
 
-  const res = await fetch(`${DASHBOARD_URL}/api/pipelines/${pipelineId}/runs`, {
+  const res = await dashboardFetch(`/api/pipelines/${pipelineId}/runs`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ triggerInput }),
