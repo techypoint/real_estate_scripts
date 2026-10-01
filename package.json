@@ -8,7 +8,9 @@
     "import:rera": "node importers/import_rera.mjs",
     "import:content": "node importers/import_content.mjs",
     "validate": "node validate_content.mjs",
-    "migrate:r2": "node migrate_to_r2.mjs"
+    "migrate:r2": "node migrate_to_r2.mjs",
+    "cron:daily-topics": "node crons/daily_topic_digest.mjs",
+    "cron:listing-content": "node crons/listing_content.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.658.0",
