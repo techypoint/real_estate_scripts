@@ -1,24 +1,21 @@
 #!/usr/bin/env node
 /**
- * One-off migration: local disk images + Mongo GridFS documents -> R2.
+ * One-off migration: local disk images + content JSON -> R2.
  *
  * Run once when cutting over to Cloudflare R2 (see CLAUDE.md / docs for the
  * design). Idempotent — safe to re-run; putObject skips keys that already
  * exist, and content JSON rewrites are no-ops once already migrated.
  *
- * What it does NOT do: delete data/media/ or the GridFS `documents` bucket.
- * Verify the CDN serves everything correctly first, then remove those
- * yourself once you're confident — this script only ever adds.
+ * What it does NOT do: delete data/media/. Verify the CDN serves everything
+ * correctly first, then remove that yourself once you're confident — this
+ * script only ever adds.
  *
  * Usage:
  *   node migrate_to_r2.mjs            # images (data/media) + content JSON
- *   node migrate_to_r2.mjs --docs     # also: GridFS documents -> R2,
- *                                     # updates projects.documents[] in Mongo
  */
 import fs from "node:fs/promises";
 import path from "node:path";
-import { GridFSBucket } from "mongodb";
-import { connect, close, COL, ROOT } from "./lib/db.mjs";
+import { ROOT } from "./lib/db.mjs";
 import { putObject } from "./lib/r2.mjs";
 
 const MEDIA_DIR = path.join(ROOT, "data/media");
@@ -97,62 +94,12 @@ async function migrateContentJson() {
   else console.log();
 }
 
-async function migrateDocuments(db) {
-  const bucket = new GridFSBucket(db, { bucketName: "documents" });
-  const files = await bucket.find({}).toArray();
-  console.log(`Documents: ${files.length} file(s) in GridFS`);
-
-  const keyByGridfsId = new Map();
-  for (const file of files) {
-    const key = `documents/${file.filename}`;
-    const chunks = [];
-    await new Promise((resolve, reject) => {
-      bucket
-        .openDownloadStream(file._id)
-        .on("data", (c) => chunks.push(c))
-        .on("error", reject)
-        .on("end", resolve);
-    });
-    const { uploaded } = await putObject(key, Buffer.concat(chunks), {
-      contentType: file.metadata?.contentType || "application/pdf",
-      contentDisposition: `inline; filename="${path.basename(file.filename)}"`,
-    });
-    keyByGridfsId.set(String(file._id), key);
-    console.log(`  ${uploaded ? "ok  " : "skip"} ${key}`);
-  }
-
-  const projects = db.collection(COL.projects);
-  const cursor = projects.find({ "documents.gridfs_id": { $exists: true } });
-  let updated = 0;
-  for await (const proj of cursor) {
-    const documents = (proj.documents || []).map((d) => {
-      if (!d.gridfs_id) return d;
-      const key = keyByGridfsId.get(String(d.gridfs_id));
-      const { gridfs_id, content_type, ...rest } = d;
-      return key ? { ...rest, url: key } : d;
-    });
-    await projects.updateOne({ _id: proj._id }, { $set: { documents } });
-    updated++;
-  }
-  console.log(`Documents done. ${files.length} uploaded/verified, ${updated} project(s) updated.\n`);
-}
-
 async function main() {
-  const withDocs = process.argv.includes("--docs");
-
   await migrateImages();
   await migrateContentJson();
-
-  if (withDocs) {
-    const { db } = await connect();
-    await migrateDocuments(db);
-  }
-
-  await close();
 }
 
-main().catch(async (err) => {
+main().catch((err) => {
   console.error(err);
-  await close();
   process.exit(1);
 });

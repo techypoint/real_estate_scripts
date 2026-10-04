@@ -1,0 +1,2202 @@
+
+
+<!DOCTYPE html>
+<html>
+<head id="ctl00_Head1"><link rel="shortcut icon" href="img/rera_logo.png" type="image/x-icon" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        // function Print() { 
+        // var printWindowOpt = "toolbar=yes,location=no,directories=yes,menubar=yes,";
+        // printWindowOpt += "scrollbars=yes,width=750,height=500,left=100,top=125";
+        // document.getElementById("ctl00_ContentPlaceHolder1_pnlprint").visibility = 'visible';
+        // var sWinHTML = document.getElementById("ctl00_ContentPlaceHolder1_pnlprint").innerHTML;
+        // var printWindow = window.open("", "", printWindowOpt);
+        //  printWindow.document.open();
+        // printWindow.document.write('<html><body><table style="width:100%;text-align:center"><tr><td style="width:15%"><img src="images/Picture2.png" style="width:80px;height:80px" /></td><td style="text-align:center"><h3>भू-सम्पदा विनियामक प्राधिकरण, उत्तर प्रदेश</h3><h4>नवीन भवन, राज्य नियोजन संस्थान,<br> कालाकांकर हाउस , पुराना हैदराबाद, लखनऊ - 226007  </h4> </td></tr><tr><td colspan="3" style="text-align:center"><h3></h3></td></tr><tr><td colspan="3"></br>');
+        // printWindow.document.write(sWinHTML);
+        // printWindow.document.write('</td></tr></table></body></html>');
+        // printWindow.document.write('</head><body ><table style="width:100%;text-align:center"><tr><td style="width:15%"><img src="images/Picture2.png" style="width:80px;height:80px" /></td><td style="text-align:center"><h3>भू-सम्पदा विनियामक प्राधिकरण, उत्तर प्रदेश</h3><h4>नवीन भवन, राज्य नियोजन संस्थान,<br> कालाकांकर हाउस , पुराना हैदराबाद, लखनऊ - 226007  </h4> </td></tr><tr><td colspan="3" style="text-align:center"><h3></h3></td></tr><tr><td colspan="3"></br>');
+        // printWindow.document.write(panel.innerHTML);
+        // printWindow.document.write('</td></tr></table></body></html>');  
+        // printWindow.document.close();
+        // SetActiveStyleSheet('Print Preview');
+        // printWindow.print();
+        // printWindow.close();
+        //return true; 
+        // }
+        $(document).ready(function () {
+            // alert('ok');
+            load_MultiplePromoter1();
+        });
+        $(document).ready(function () {
+            $('#btn').click(function () {
+                $('#dialog').dialog("open");
+            });
+            $('#dialog').dialog({
+                title: 'Contact Information',
+                draggable: false,
+                resizable: false,
+                width: 600,
+                height: 350,
+                closeOnEscape: false,
+                modal: true,
+                autoOpen: false
+
+            });
+        });
+
+        function load_MultiplePromoter1() {
+            var var1 = '';
+            //alert(var1);
+            var id = var1;
+            $.ajax({
+                type: "POST",
+                url: "WebService1.asmx/load_MultiplePromoter1",
+                data: "{id: '" + id + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (r) {
+                    // alert(r.d);
+                    if (r.d != "0") {
+                        $('#tblregistry1').html(r.d);
+                    }
+                    else {
+                        $('#promoterdiv').hide();
+                    }
+                },
+                error: function (r) {
+
+                },
+                failure: function (r) {
+
+                }
+            });
+        }
+
+        function Print() {
+            var panel = document.getElementById("ctl00_ContentPlaceHolder1_pnlprint");
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head><title></title>');
+            //printWindow.document.write('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>');
+            printWindow.document.write('</head><body ><table style="width:100%;text-align:center"><tr><td style="width:15%"><img src="images/Picture2.png" style="width:80px;height:80px" /></td><td style="text-align:center"><h3>भू-सम्पदा विनियामक प्राधिकरण, उत्तर प्रदेश</h3><h4>नवीन भवन, राज्य नियोजन संस्थान,<br> कालाकांकर हाउस , पुराना हैदराबाद, लखनऊ - 226007  </h4> </td></tr><tr><td colspan="3" style="text-align:center"><h3></h3></td></tr><tr><td colspan="3"></br>');
+            printWindow.document.write(panel.innerHTML);
+            printWindow.document.write('</td></tr></table></body></html>');
+            printWindow.document.close();
+            setTimeout(function () {
+                printWindow.print();
+            }, 500);
+            return false;
+        }
+
+        function showModalPopUp(promoterid) {
+            $('#mymodalPopup').modal('toggle');
+            $('#mymodalPopup').modal('show');
+            //popUpObj = window.open("ViewPromoterforproject.aspx?promoter=" + promoterid,
+            //"ModalPopUp",
+            //"toolbar=no," +
+            //"scrollbars=no," +
+            //"location=no," + 
+            //"statusbar=no," + 
+            //"menubar=no," + 
+            //"resizable=0," +
+            //"width=800," +  
+            //"height=400," + 
+            //"left = 200," + 
+            //"top=200"
+            //); 
+            //popUpObj.focus();
+            //  LoadModalDiv();
+        }
+        function downloadFile(pdfname) {
+            debugger;
+            var url = "https://upreradisk.blob.core.windows.net/azureportaldeploy/";
+            var pdfname = pdfname;
+            var link = document.createElement('a');
+            link.href = url + pdfname;
+            link.download = pdfname;
+            link.click();
+            link.remove();
+
+        }
+    </script>
+    <style>
+        ._xymns .row:nth-of-type(odd) {
+            /* background: #eaeaea; */
+            /* background: #ffffff; */
+            background: #fdfdfd;
+        }
+
+        ._xymns .row {
+            /* background: #fff; */
+            padding: 5px 0px;
+            border-top: 1px solid #ddd;
+        }
+
+        .divPromoter label {
+            font-weight: normal !important;
+        }
+
+        .modal {
+            /*position: fixed;
+     top: 0;
+     left: 0;
+     background-color: rgba(255,255,255, 0.1) !important;
+     z-index: 99;
+     opacity: 0.8;*/
+        }
+
+
+        .form-control {
+            height: 45% !important;
+            font-size: 13px !important;
+        }
+
+        .panel-grey > .panel-heading {
+            color: #3a3b3c;
+            background-color: #c9c9c9;
+            border-color: #c9c9c9;
+        }
+
+        .panel-grey > .panel-body {
+            background: #efefef;
+        }
+    </style>
+    <style>
+        .xyz-dialog {
+            background: lightblue;
+            padding: 1rem;
+            border-radius: 8px;
+            position: relative;
+            width: 400px;
+            border: solid 1px black;
+        }
+
+            .xyz-dialog::after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-right: 30px solid lightblue;
+                position: absolute;
+                right: 100%;
+            }
+
+        .body {
+        }
+
+        @media (max-width: 768px) {
+            .xyz-dialog {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+    <style>
+        .abc-dialog {
+            padding: 1rem;
+            border-radius: 8px;
+            position: relative;
+            width: 250px;
+        }
+
+            .abc-dialog::after {
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-right: 30px solid lightblue;
+                position: absolute;
+                right: 170%;
+            }
+
+        .body {
+        }
+
+        @media (max-width: 768px) {
+            .abc-dialog {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        .background-lightBlue {
+            background-color: lightblue;
+           
+            width: 100%;       
+            max-width: 300px;
+             height:80px;
+             display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-decoration: none;
+            padding: 0;
+            border-radius: 4px;
+            border: 2px solid black !important;
+        }
+
+        .animatedtext {
+            color: darkred !important;
+           
+            animation: blinker 1.5s linear infinite;
+            text-align: center;  
+        }
+
+        @keyframes blinker {
+            30% {
+                opacity: 0.5;
+            }
+        }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><meta name="description" content="This is an official website of UP RERA that provides online information about all activities, provisions by UP RERA in Uttar Pradesh." /><meta name="keywords" content="uprera,UP RERA,uttar pradesh rera,rera in uttar pradesh,UPRERA,Official Website of RERA Uttar Pradesh,Website of RERA Uttar Pradesh,Website of RERA,RERA UP WEBSITE,UP RERA WEBSITE, OFFICIAL WEBSITE OF RERA,RERA UP,UPRERA WEBSITE,ONLINE PROPERTY,ONLINE PROJECT REGISTRTION,Promoters Registration" /><title>
+	UP RERA : Uttar Pradesh Real Estate Regulatory Authority
+</title>
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" /><link rel="stylesheet" href="css/bootstrap.css" /><link rel="stylesheet" href="css/themify-icons.css" /><link rel="stylesheet" href="vendors/fontawesome/css/all.min.css" /><link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" /><link rel="stylesheet" href="vendors/animate-css/animate.css" /><link rel="stylesheet" href="css/site.css" /><link href="JqueryCallender/css/jquery-ui.css" rel="stylesheet" /><link href="css/font-awesome.min.css" rel="stylesheet" />
+         
+    <!-- main css -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.min.js"></script>        
+     <script src="js/jquery-2.min.js"></script>
+    <script src="js/validation.js"></script>
+     
+    <link href="multiselect/bootstrap-multiselect.css" rel="stylesheet" /><link href="css/slick.css" rel="stylesheet" /><link rel="stylesheet" href="css/style.css" /><link rel="stylesheet" href="css/responsive.css" />
+
+     
+ 
+         
+       <script type="text/javascript">
+           $(document).ready(function () {
+               var counter = 0;
+
+               var originalSize = $('div').css('font-size');
+               var originalSizeAnc = $('a').css('font-size');
+               var originalSizePara = $('p').css('font-size');
+               var originalSizeli = $('li').css('font-size');
+               var originalSizetable = $('table').css('font-size');
+               // reset        
+               $(".resetMe").click(function () {
+                   counter = 0;
+
+                   $('div').css('font-size', originalSize);
+                   $('a').css('font-size', originalSizeAnc);
+                   $('p').css('font-size', originalSizePara);
+                   $('li').css('font-size', originalSizeli);
+                   $('table').css('font-size', originalSizeli);
+               });
+
+               // Increase Font Size          
+               $(".increase").click(function () {
+
+                   if (counter <= 4 && counter >= 0) {
+                       counter = counter + 1
+                   }
+                   else if (counter >= 4) {
+
+                   }
+                   else {
+                       counter = counter + 1;
+                   }
+
+                   var currentSize = $('div').css('font-size');
+
+                   var currentSizeAnc = $('a').css('font-size');
+                   var currentSizepara = $('p').css('font-size');
+                   var currentSizeli = $('li').css('font-size');
+                   var currentSizetable = $('table').css('font-size');
+                   if (counter <= 4) {
+
+                       var currentSize = parseFloat(currentSize) * 1.2;
+
+                       var currentSizeAnc = parseFloat(currentSizeAnc) * 1.2;
+                       var currentSizepara = parseFloat(currentSizepara) * 1.2;
+                       var currentSizeli = parseFloat(currentSizeli) * 1.2;
+                       var currentSizetable = parseFloat(currentSizetable) * 1.2;
+                       $('div').css('font-size', currentSize);
+                       $('a').css('font-size', currentSizeAnc);
+                       $('p').css('font-size', currentSizepara);
+                       $('li').css('font-size', currentSizeli);
+                       $('table').css('font-size', currentSizetable);
+                   }
+
+                   return false;
+               });
+
+               // Decrease Font Size       
+               $(".decrease").click(function () {
+
+                   counter = counter - 1;
+
+
+
+                   var currentFontSize = $('div').css('font-size');
+                   var currentFontSizeAnc = $('a').css('font-size');
+                   var currentFontSizepara = $('p').css('font-size');
+                   var currentFontSizeli = $('li').css('font-size');
+                   var currentFontSizetable = $('table').css('font-size');
+                   var currentSize = $('div').css('font-size');
+                   var currentSizeAnc = $('a').css('font-size');
+                   var currentSizepara = $('p').css('font-size');
+                   var currentSizeli = $('li').css('font-size');
+                   var currentSizetable = $('table').css('font-size');
+
+                   var currentSize = parseFloat(currentSize) * 0.8;
+                   var currentSizeAnc = parseFloat(currentSizeAnc) * 0.8;
+                   var currentSizepara = parseFloat(currentSizeAnc) * 0.8;
+                   var currentSizeli = parseFloat(currentSizeli) * 0.8;
+                   var currentSizetable = parseFloat(currentSizetable) * 0.8;
+
+                   $('div').css('font-size', currentSize);
+                   $('a').css('font-size', currentSizeAnc);
+                   $('p').css('font-size', currentSizepara);
+                   $('li').css('font-size', currentSizeli);
+                   $('table').css('font-size', currentSizetable);
+                   return false;
+               });
+           });
+
+      </script>
+
+ 
+
+    
+
+    
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./Projectsummary?UI0aPA1ISD=c2XMflULb3E%3d&amp;hfFlag=9emr4VdBw22M7BGjKtJWMPDI4s5cHQZP&amp;IRSAHEB=D6PY3lyims8%3d" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=oysczSfWjxaqyXTE1Vc3kHDxi5XtqK1JMzq2Vi232P69e-qEOvKfYUVDSOpSjErM7DoKmjrekEJvwojLWAmCcvQCqqXclWXwAwL4zwMVSW41&amp;t=639190743605538696" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=9hSKVupFAlz5rX1VfBgqktJMTypQlhA4CayKFPkY73SkaMnjMtFJYKhIgoJMaysbh9Vcm_sdgF4wmtit3uonkkb58QNc8r-e0usWCn8E9rWQCdPVfnqgw2kYVX_H95_1s5OQQx7e2--IIBu5WuM_yvcP-J2NhS6bxlrH2wOOTYo1&amp;t=208c238a" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=jDrYmNZ1BfuQTouQ_UV7IBXWXW1cdQHTmtY5CMur73DvuWX3F9zbKJSatVkGJH8D5QlCEr30Ln1LYpkSHGTJMAMQGq3Qjug1o3V1bbfG-porSx-F_NY_aH8Ilc0rGfLoeBK2RoLUILrFmoB9ahemWA2&amp;t=7f16157c" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=MAu_8cfvAW3EacCFy5ILGbP2J5ZIraHFvdesKCM3FNSD5AxXS11iLp-fm0xTdT_r3OKMSf_d7CVpxWPDa_mXlV7n3v-DA3Ad1vYXSVYrDDWA9LWSeqx04EuNMgAEApD_U2rRq7PlnRN1ynOdOddYxw2&amp;t=7f16157c" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B9BBCE2D" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], ['ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl49$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl50$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl51$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl52$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl53$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl54$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl55$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl56$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl57$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl58$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl59$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl60$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl61$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl62$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl63$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl64$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl65$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl66$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl67$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl68$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl69$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl70$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl71$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl72$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl73$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl74$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl75$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl76$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl77$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl78$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl79$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl80$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl81$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl82$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl83$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl02$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl03$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl04$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl05$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl06$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl07$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl08$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl09$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl10$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl11$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl12$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl13$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl14$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl15$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl16$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl17$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl18$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl19$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl20$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl21$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl22$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl23$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl24$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl25$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl26$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl27$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl28$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl29$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl30$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl31$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl32$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl33$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl34$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl35$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl36$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl37$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl38$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl39$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl40$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl41$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl42$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl43$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl44$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl45$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl46$Lnkdownload','','ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl47$Lnkdownload',''], 90, 'ctl00');
+//]]>
+</script>
+
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="accessibilityDiv">
+                        <ul class="accessibility-icons list-unstyled list-inline font-zoom pull-right">
+                            <li class="language" style="display: inline;"><a style="font-size: 14px;" class="taglib-language-list-text" href="#">
+                                
+                                   <a href="https://facebook.com/upreraofficial" target="_blank" title="Facebook" ><i class="fa fa-facebook"></i></a>	
+                                &nbsp;
+                               <a href="https://twitter.com/UPRERAofficial" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>	
+                                   &nbsp;
+                                <a href="https://www.youtube.com/channel/UCAeF0bOHPpzN-K9QvfA9rSQ" target="_blank" title="Youtube"><i class="fa fa-youtube-play" style="color:red"></i></a>	
+                                  &nbsp;
+                                  &nbsp;
+                                <a href="#" class="taglib-language-list-text increase" title="Increase font size"> | +A</a>
+                                  &nbsp;
+                                  &nbsp;
+                                <a href="#" class="taglib-language-list-text resetMe" title="Restore default font size" style="padding: 2px 6px 2px 6px;">| A</a>
+                                  &nbsp;
+                                  &nbsp;
+                                <a href="#" class="taglib-language-list-text decrease" title="Decrease font size" style="">| -A</a>
+                                 &nbsp;
+                                  &nbsp;
+                                <a style="font-size: 14px;" class=" taglib-language-list-text " href="#main" data-toggle="tooltip" title="Skip to main content"><span class="fa fa-arrow-down"></span>   </a>
+                                  &nbsp;
+                                  &nbsp;
+
+                                 <a style="font-size: 14px;" class=" taglib-language-list-text " href="ScreenReader.aspx" data-toggle="tooltip" title="Screen Reader Access"><span class="fa fa-desktop"></span>   </a>
+                                  &nbsp;
+                                  &nbsp;
+                                <a style="font-size: 14px;" class="taglib-language-list-text " href="Sitemap" data-toggle="tooltip" title="Sitemap"> <i class="fa fa-sitemap" aria-hidden="true"></i></a>
+                                         &nbsp;
+                                  &nbsp;
+                                <a style="font-size: 14px;" class="taglib-language-list-text " href="admin" data-toggle="tooltip" title=""> <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                   
+                                    &nbsp;
+                                  &nbsp;
+                              
+                                <span class="time"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                <script type="text/javascript">
+                                    var d = new Date()
+                                    var weekday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+                                    var monthname = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+                                    document.write(weekday[d.getDay()] + ", ")
+                                    document.write(d.getDate() + " ")
+                                    document.write(monthname[d.getMonth()] + ", ")
+                                    document.write(d.getFullYear())
+                                </script>
+                                | <i class="far fa-clock" aria-hidden="true"></i>
+                                <span id="clockDisplay">
+                                    <script type="text/javascript" language="javascript">
+                                        function renderTime() {
+                                            var currentTime = new Date();
+                                            var diem = "AM";
+                                            var h = currentTime.getHours();
+                                            var m = currentTime.getMinutes();
+                                            var s = currentTime.getSeconds();
+                                            setTimeout('renderTime()', 1000);
+                                            if (h == 0) {
+                                                h = 12;
+                                            } else if (h > 12) {
+                                                h = h - 12;
+                                                diem = "PM";
+                                            }
+                                            if (h < 10) {
+                                                h = "0" + h;
+                                            }
+                                            if (m < 10) {
+                                                m = "0" + m;
+                                            }
+                                            if (s < 10) {
+                                                s = "0" + s;
+                                            }
+                                            var myClock = document.getElementById('clockDisplay');
+                                            myClock.textContent = h + ":" + m + ":" + s + " " + diem;
+                                            myClock.innerText = h + ":" + m + ":" + s + " " + diem;
+                                        }
+                                        renderTime();
+                                    </script>
+                                </span></span></a>
+
+
+                            </li>
+                            <li class="language" style="display: inline;"></li>
+                            <li class="language" style="display: inline;"> </li>
+                            <li class="language" style="display: inline;"> </li>
+                            <li class="language" style="display: inline;"> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main_menu m0">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row" style="width: 100%">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="col-lg-2 col-md-2 col-xs-6">
+                                <a class="navbar-brand logo_h" href="index" style="padding-top: 10px;">
+                                    <img src="img/rera_logo.png" title="UPRERA Logo" alt="UPRERA" class="img-responsive" /></a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="float: right;">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="col-lg-9 col-md-9" style="padding-right: 0px; padding-left: 0px;">
+                                <div class="row wname" style="margin-top: 15px;">
+                                    <div class="col-lg-12 col-md-12">
+                                        <h2 id="reraheading" style="color:#dc3838">Uttar Pradesh Real Estate Regulatory Authority</h2>
+                                    </div>
+                                </div>
+                                <div class="row menudiv" style="margin-top: 10px;">
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse main-menu-item" id="navbarNav" style="margin-top: 5px;">
+                                        <a href="#ctl00_menuBar_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=qRV__gASohxYzUYw4RthYnyOyafG05EdEYlf45hh_Zw2aGxOzGSxeQeWS2HRmdgDWkuyRHsu-VXZ_0uBpfGAr6ovsJ7RcJaAXmzR1O-AOcU1&amp;t=639190743605538696" width="0" height="0" style="border-width:0px;" /></a><div id="ctl00_menuBar" style="width: 100%; float: none;">
+	<ul class="level1 nav navbar-nav">
+		<li><a class="level1" href="index.aspx"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li><li><a class="popout level1" href="#">ABOUT RERA</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="about">INTRODUCTION</a></li><li><a class="popout level2" href="#">MEDIA SECTION</a><ul class="level3 dropdown-menu">
+				<li><a class="level3" href="GalleryDashboard">PHOTO GALLERY</a></li><li><a class="level3" href="VideoDashboard">VIDEO GALLERY</a></li><li><a class="level3" href="PressRelease">PRESS RELEASES</a></li><li><a class="level3" href="reranews">IN NEWS</a></li><li><a class="level3" href="frm_interviews.aspx">INTERVIEWS</a></li>
+			</ul></li><li><a class="level2" href="frm_Rera_Anual_Report.aspx">UP-RERA Annual Report</a></li><li><a class="level2" href="pdf/Best_Practices_by_UP-RERA.pdf">E-Book on Best Practices</a></li>
+		</ul></li><li><a class="popout level1" href="#">LEGAL</a><ul class="level2 dropdown-menu">
+			<li><a class="popout level2" href="#">ACTS</a><ul class="level3 dropdown-menu">
+				<li><a class="level3" href="pdf/reraact.pdf">RERA Acts</a></li><li><a class="level3" href="https://awas.upsdc.gov.in/en/page/acts">UP Housing Development Acts </a></li><li><a class="level3" href="https://www.yamunaexpresswayauthority.com/web/acts-regulations/key-acts/">UP Industrial Development Acts </a></li>
+			</ul></li><li><a class="popout level2" href="#">RULES</a><ul class="level3 dropdown-menu">
+				<li><a class="level3" href="pdf/rera.pdf">UP RERA Rules General Rules-2016 </a></li><li><a class="level3" href="pdf/UPRERA_ATS_2018.pdf">UP RERA Rules-2018 (Agreement for Sale and lease) </a></li><li><a class="level3" href="https://awas.upsdc.gov.in/en/page/rules">UP Housing Development Rules </a></li>
+			</ul></li><li><a class="popout level2" href="#">REGULATIONS</a><ul class="level3 dropdown-menu">
+				<li><a class="level3" href="frm_Regulation_View.aspx">UP RERA Regulations</a></li><li><a class="level3" href="https://awas.upsdc.gov.in/en/page/regulations">UP Housing Development Regulations  </a></li><li><a class="level3" href="https://www.stagingupsida.com/ammendment-regulation.aspx">UP Industrial Development Regulations</a></li>
+			</ul></li><li><a class="popout level2" href="#">Bye-Laws</a><ul class="level3 dropdown-menu">
+				<li><a class="level3" href="https://awas.upsdc.gov.in/en/page/bye-laws">UP Housing Development Bye-Laws</a></li><li><a class="level3" href="https://www.stagingupsida.com/laws-upsida.aspx">UP Industrial Development Bye-Laws</a></li>
+			</ul></li><li><a class="level2" href="pdf/rerenotification.pdf">NOTIFICATIONS</a></li><li><a class="level2" href="pdf/RERAAccountDirections11052026.pdf">Project Account Directions, 3rd Revision dt 11.05.2026</a></li>
+		</ul></li><li><a class="popout level1" href="#">REGISTRATIONS</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="project">PROMOTER</a></li><li><a class="level2" href="login">PROJECT</a></li><li><a class="level2" href="NewAgent">AGENT</a></li><li><a class="level2" href="auth_entity_reg">Authorized Entity U/S  8</a></li>
+		</ul></li><li><a class="popout level1" href="#">CONCILIATION FORUM</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="conciliations">CONCILIATION LOGIN</a></li><li><a class="level2" href="ConciliationDetails">CONCILIATION STATUS</a></li>
+		</ul></li><li><a class="popout level1" href="#">COMPLAINTS </a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="SignUp">REGISTER COMPLAINT</a></li><li><a class="level2" href="SignUp">COMPLAINT FOR COMPENSATION</a></li><li><a class="level2" href="getcomplaint">GET COMPLAINT NUMBER</a></li><li><a class="level2" href="register_grievance">Public Grievance</a></li><li><a class="level2" href="frm_sec39_Insert_complaint_details_new.aspx">Request for Rectification of Order U/S 39</a></li><li><a class="level2" href="Frm_All_Complaint_Status_Page.aspx">Complaint Status</a></li><li><a class="level2" href="frm_ecourt_Complaint_Cause_Action_public.aspx?oldid=">2nd complaint for new cause of action</a></li><li><a class="level2" href="frm_view_complaint_cause_action_public.aspx">View 2nd complaint for new cause of action</a></li><li><a class="level2" href="Frm_All_ComplaintAOA_Status_Page.aspx">Complaint AOA Status</a></li>
+		</ul></li><li><a class="popout level1" href="#">REQUEST</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="Requestdoc">Request For Certified Copy of Document</a></li><li><a class="level2" href="frm_OrderExecution.aspx">REQUEST FOR ORDER EXECUTION</a></li><li><a class="level2" href="frm_Rc_Report.aspx">VIEW RC STATUS</a></li><li><a class="level2" href="frm_process_request_fileinspection.aspx">Request For Physical File Inspection</a></li>
+		</ul></li><li><a class="popout level1" href="#">LOGIN</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="login">USER LOGIN</a></li><li><a class="level2" href="InspectionOfficerLogin.aspx">INSPECTION LOGIN</a></li><li><a class="level2" href="SignUp">E-Court Login/Sign Up</a></li><li><a class="level2" href="grievance_login">Grievance Login</a></li><li><a class="level2" href="login_sec8">Authorized Entity U/S 8 Login</a></li>
+		</ul></li><li><a class="popout level1" href="#">DOWNLOADS</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="finalcertificates/finalcertificates/Form%20REG%201%20(Architect%20Certificate).xlsx">Form REG 1 (Architect Certificate)</a></li><li><a class="level2" href="finalcertificates/finalcertificates/Form%20REG%202%20(Engineer%20Certificate).xlsx">Form REG 2 (Engineer Certificate)</a></li><li><a class="level2" href="finalcertificates/finalcertificates/Form%20REG%203%20(CA%20Certificate).xlsx">Form REG 3 (CA Certificate)</a></li><li><a class="level2" href="finalcertificates/finalcertificates/Form%20REG%204%20(Architect%20Certificate).docx">Form REG 4 (Architect Certificate)</a></li><li><a class="level2" href="finalcertificates/finalcertificates/Form%20REG%204A%20(Architect%20Certificate).docx">Form REG 4A (Architect Certificate)</a></li><li><a class="level2" href="finalcertificates/finalcertificates/Form%20REG%205%20(CA%20Certificate).doc">Form REG 5 (CA Certificate)</a></li>
+		</ul></li><li><a class="level1" href="applicationform">CAREER</a></li><li><a class="popout level1" href="#">USER MANUALS</a><ul class="level2 dropdown-menu">
+			<li><a class="level2" href="usermanual/usermanual/User%20Manual%20for%20Complaint%20Registration.pdf" target="_blank">User Manual for Complaint Registration</a></li><li><a class="level2" href="usermanual/usermanual/User-Manual-Promoter-Enrollment.pdf" target="_blank">User Manual for Promoter Enrollment</a></li><li><a class="level2" href="usermanual/usermanual/User%20Manual%20for%20Project%20Registration.pdf">User Manual for Project Registration</a></li><li><a class="level2" href="usermanual/usermanual/User%20Manual%20for%20Project%20Extension.pdf">User Manual for Project Extension</a></li><li><a class="level2" href="usermanual/usermanual/User%20Manual%20for%20Agent%20Registration.pdf">User Manual for Agent Registration</a></li>
+		</ul></li><li><a class="level1" href="ContactUs">CONTACT US</a></li>
+	</ul>
+</div><a id="ctl00_menuBar_SkipLink"></a>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 cm" style="padding-right: 0">
+                       
+                              
+                                      <img src="#" alt="Hon'ble CM YOGI ADITYANATH" title="Hon'ble CM YOGI ADITYANATH" class="img-responsive" style="height: 95px; max-width: 100px;display:none" />
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        
+
+        <!--================Header Menu Area =================-->
+        <div style="min-height:400px;" id="main">
+            
+    <section class="breadcrumb blog_bg myclass">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb_iner">
+                        <div class="breadcrumb_iner_item">
+                            <h2>Registration Details</h2>
+                            <span style="color: #FFF;">View Registration's Details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contentSection" class="service-area area-padding">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 20px; padding: 0px">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3>Project Detail</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h1 class="panel-title">Project Basic Information</h1>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="_xymns">
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label for="lblprojectname">Project Name</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_lblprojectname"> ATS ALLURE</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label for="lblregno">Registration Number</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_lblregno">UPRERAPRJ918</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label for="prjregdate">Project Registration Date</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_prjregdate">31-07-2017</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label for="prj_type">Project Type</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_prj_type">Ongoing</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label>Project Cordinator Number </label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_contactnumber">9643007884</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label>Proposed Period </label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_Lblpropeseperoid">63</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label id="ctl00_ContentPlaceHolder1_lblProposedStartDate" class="">Original Start Date : </label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_lblpropesedDatestart">04-07-2014</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label id="ctl00_ContentPlaceHolder1_imp1" class="">Modified Start Date :</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_mdate">04-07-2014</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <label>Declared Date Of Completion</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <label id="ctl00_ContentPlaceHolder1_Lblproposedenddt">04-09-2019</label>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div id="ctl00_ContentPlaceHolder1_divViewOnMap" class="row">
+                                                            <div class="col-sm-4">
+                                                                <label>View On Map</label>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <a target="_blank" class="btn btn-link" href="mapview_project.aspx?form=918" title="View on map"><i class="fa fa-2x fa-map-marker"></i></a>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            
+                            <div class="xyz-dialog" style="position: absolute; top: 100px; right: 100px;">
+                                <div class="title">
+                                    <marquee><span style="font-size:18px;font-weight:bold">Contact Details</span></marquee>
+                                </div>
+                                <div class="body">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>Promoter Mobile Number</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label id="ctl00_ContentPlaceHolder1_promoterMobileNumber">9643007884</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>Project Coordinator Number</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label id="ctl00_ContentPlaceHolder1_projectCordinatorNumber">9643007884</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>HelpLine/TollFree Number</label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label id="ctl00_ContentPlaceHolder1_helpLineNumber"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            
+
+
+                            
+                            <div id="ctl00_ContentPlaceHolder1_divQR">
+                                <div class="abc-dialog" style="position: absolute; top: 300px; right: 100px;">
+                                    
+                                    <div class="body">
+                                        <div class="row" style="margin-left: 50px; margin-bottom: -18px;">
+                                            <img id="ctl00_ContentPlaceHolder1_imgQRCode" src="" style="height:100px;width:100px;border-width:0px;" />
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="_xymns">
+                                                    <div id="ctl00_ContentPlaceHolder1_dv_ext" class="row">
+                                                        <div class="col-sm-12" style="padding: 0">
+                                                            <div class="panel panel-info">
+                                                                <div class="panel-heading">
+                                                                    <h1 class="panel-title">Extension Granted</h1>
+                                                                </div>
+                                                                <div class="panel-body">
+                                                                    <div id="ctl00_ContentPlaceHolder1_dv_extgrd" class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="table-responsive">
+                                                                                <div>
+	<table class="table table-hover table-condensed" cellspacing="0" border="0" id="ctl00_ContentPlaceHolder1_grd_extension" style="width:100%;border-collapse:collapse;">
+		<tr>
+			<th scope="col" style="width:10%;">Sno</th><th scope="col" style="width:45%;">Extension From</th><th scope="col" style="width:45%;">Extension Upto</th>
+		</tr><tr>
+			<td>
+                                                                                                <span id="ctl00_ContentPlaceHolder1_grd_extension_ctl02_lblid">1</span>
+                                                                                            </td><td>
+                                                                                                <span id="ctl00_ContentPlaceHolder1_grd_extension_ctl02_lblextf">04-09-2019</span>
+                                                                                            </td><td>
+                                                                                                <span id="ctl00_ContentPlaceHolder1_grd_extension_ctl02_lblextt">03-09-2020</span>
+                                                                                            </td>
+		</tr><tr>
+			<td>
+                                                                                                <span id="ctl00_ContentPlaceHolder1_grd_extension_ctl03_lblid">2</span>
+                                                                                            </td><td>
+                                                                                                <span id="ctl00_ContentPlaceHolder1_grd_extension_ctl03_lblextf">03-09-2020</span>
+                                                                                            </td><td>
+                                                                                                <span id="ctl00_ContentPlaceHolder1_grd_extension_ctl03_lblextt">02-03-2021 (Six months extension in view of force majeure caused by covid-19 pandemic)</span>
+                                                                                            </td>
+		</tr>
+	</table>
+</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="ctl00_ContentPlaceHolder1_dv_oc" class="row">
+                                                        <div class="col-sm-4">
+                                                            <label for="ViewOCCC">View OC/CC</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <a class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
+                                                                <img src="img/new-icon.gif" />
+                                                                View</a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h1 class="panel-title">Project Location</h1>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="_xymns">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>State</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblState">Uttar Pradesh</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>District</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lbldistrict">Gautam Buddha Nagar</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>Tehsil</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lbltechsil">Gautam Buddha Nagar</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>Project Address</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblpaddress">PLOT No. P7, TS-02, SECTOR-22D, YEIDA.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h1 id="ctl00_ContentPlaceHolder1_headPrmEOrEntity" class="panel-title">Promoter Detail</h1>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="_xymns">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblPrmName">Name</label>
+                                                        </div>
+                                                        <div class="col-sm-8 divPromoter">
+                                                            <span id="ctl00_ContentPlaceHolder1_Lblpromotername">ATS REALTY PRIVATE LIMITED</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblprmtype">Applicant Type</label>
+                                                        </div>
+                                                        <div class="col-sm-8 divPromoter">
+                                                            <label id="ctl00_ContentPlaceHolder1_LblAppicanttype">Company</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblprmMob">Mobile</label>
+                                                        </div>
+                                                        <div class="col-sm-8 divPromoter">
+                                                            <label id="ctl00_ContentPlaceHolder1_Lblmobilenumber">9643007884</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblprmemailid">Email</label>
+                                                        </div>
+                                                        <div class="col-sm-8 divPromoter">
+                                                            <label id="ctl00_ContentPlaceHolder1_Lblemailapp">realty@atsgreens.com</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblprmadd">Promoter&#39;s Address</label>
+                                                        </div>
+                                                        <div class="col-sm-8 divPromoter">
+                                                            <label id="ctl00_ContentPlaceHolder1_Lbladdressapplicant">711/92, Deepali Nehru Place, South Delhi, India 110091</label>
+                                                        </div>
+                                                    </div>
+                                                    <div id="ctl00_ContentPlaceHolder1_dvChairman" class="row">
+                                                        <div class="col-sm-4">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblprmchairmainAdd">Chairman&#39;s Address</label>
+                                                        </div>
+                                                        <div class="col-sm-8 divPromoter">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblpromoterChairmanaddress">711/92, Deepali Nehru Place, South Delhi, India 110091</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row" id="promoterdiv">
+                            <div class="col-sm-12" style="padding: 0">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h1 class="panel-title">Other Promoter Associated With this Project</h1>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="_xymns">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="table-responsive">
+                                                                <table id="tblregistry1" class="table table-hover table-condensed" border="0"></table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" style="padding: 0">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading">
+                                        <h1 class="panel-title">Projects and Complaints against the promoter</h1>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="_xymns">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>Number of the projects of the promoter</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lbltotalproject">3</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>Total complaints against the promoter</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lbltotalcomplaint">320 (Under Registration - 2 )</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <label>Total no. of complaints in respect to this Project</label>
+                                                        </div>
+                                                        <div class="col-sm-8">
+                                                            <label id="ctl00_ContentPlaceHolder1_lblprojectwisecomplaint">285</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+                            <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+                                <a id="ctl00_ContentPlaceHolder1_lnkviewinspectdoc" class="btn btn-red" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$lnkviewinspectdoc&#39;,&#39;&#39;)">View Site Inspection Details</a>
+                            </div>
+                            <div class="col-sm-4 col-lg-4 col-md-4 text-center">
+                                <div id="ctl00_ContentPlaceHolder1_pnlViewPrjDetail">
+	
+                                    <a class="btn btn-red" href="viewprojects" target="_blank">View Project In Detail </a>
+                                
+</div>
+                                
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 text-center" style="display: none">
+                                <a class="btn btn-red" style="display: none" onclick="showModalPopUp('')" id="A8">View Project Summary </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(function () {
+            $("#show-slide").click(function () {
+                $('.slide-box').slideToggle("slow", function () { });
+            });
+        });
+    </script>
+    <script src="http://rera.mp.gov.in/assets/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('.carousel').carousel({
+                interval: 6000
+            })
+
+        });//end dom
+    </script>
+    <div id="mymodalPopup" class="modal fade" role="dialog">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content" style="width: 800px">
+                <div class="modal-header">
+                    <h4 class="modal-title">Project Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="text-align: right;">
+                        <div class="col-sm-10"></div>
+                        <div class="col-sm-2">
+                            <input type="image" name="ctl00$ContentPlaceHolder1$Btnprint" id="ctl00_ContentPlaceHolder1_Btnprint" src="images/printButton.png" onclick="Print();" style="height:30px;width:30px;border-width:0px;" />
+                        </div>
+                    </div>
+                    <div id="ctl00_ContentPlaceHolder1_pnlprint">
+	
+                        <div class="row">
+                            <div class="col-sm-12 table-responsive" style="text-align: center">
+                                <span id="ctl00_ContentPlaceHolder1_pnlheading" style="font-size: 20px; text-decoration: underline; font-family: Algerian">Project Summary</span>
+                                <br />
+                                <br />
+                                <div>
+
+	</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <br />
+                                <br />
+                                <span id="ctl00_ContentPlaceHolder1_lbldocdt" style="font-size: 16px; text-decoration: underline; font-family: Algerian; margin-left: 20px;">Document Details</span>
+                                <br />
+                                <br />
+                                <div>
+		<table cellspacing="0" cellpadding="4" class="table table-bordered table-striped" border="0" id="ctl00_ContentPlaceHolder1_grvdocumentdetails" style="color:#333333;width:100%;border-collapse:collapse;">
+			<tr style="color:White;background-color:Orange;font-weight:bold;">
+				<th align="left" scope="col">
+                                                SNo.
+                                            </th><th align="left" scope="col">Document Name</th><th scope="col">Upload Type</th><th align="left" scope="col">Download</th>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl02_lblSRNO">1</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl02_Label2">Commencement Certificate</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl02_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl02$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl02_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl02_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl02$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl03_lblSRNO">2</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl03_Label2">Other Plan(If Any)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl03_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl03$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl03_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl03_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl03$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl04_lblSRNO">3</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl04_Label2">Proforma of Application Form</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl04_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl04$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl04_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl04_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl04$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl05_lblSRNO">4</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl05_Label2">Proforma of Allotment Letter</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl05_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl05$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl05_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl05_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl05$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl06_lblSRNO">5</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl06_Label2">Proforma of Conveyance Deed</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl06_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl06$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl06_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl06_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl06$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl07_lblSRNO">6</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl07_Label2">Proforma of Completion Certificate(Occupancy)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl07_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl07$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl07_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl07_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl07$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl08_lblSRNO">7</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl08_Label2">Waste Disposal Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl08_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl08$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl08_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl08_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl08$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl09_lblSRNO">8</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl09_Label2">Water Supply Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl09_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl09$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl09_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl09_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl09$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl10_lblSRNO">9</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl10_Label2">Electricity Supply Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl10_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl10$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl10_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl10_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl10$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl11_lblSRNO">10</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl11_Label2">Development Work Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl11_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl11$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl11_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl11_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl11$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl12_lblSRNO">11</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl12_Label2">Affidavit (Form-B)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl12_Labdoc">NA</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl12$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl12_mainid" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl12_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl12$Lnkdownload&#39;,&#39;&#39;)" style="color: black"></a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl13_lblSRNO">12</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl13_Label2">ENGINEERS CERTIFICATE</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl13_Labdoc">New</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl13$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl13_mainid" value="49420" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl13_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl13$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl14_lblSRNO">13</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl14_Label2">ARCHITECT CERTIFICATE</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl14_Labdoc">New</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl14$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl14_mainid" value="49416" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl14_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl14$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl15_lblSRNO">14</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl15_Label2">CA CERTIFICATE</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl15_Labdoc">New</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl15$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl15_mainid" value="49412" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl15_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl15$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl16_lblSRNO">15</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl16_Label2">Details of Encumbrances</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl16_Labdoc">New</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl16$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl16_mainid" value="44230" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl16_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl16$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl17_lblSRNO">16</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl17_Label2">Development Work Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl17_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl17$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl17_mainid" value="36700" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl17_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl17$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl18_lblSRNO">17</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl18_Label2">Electricity Supply Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl18_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl18$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl18_mainid" value="36699" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl18_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl18$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl19_lblSRNO">18</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl19_Label2">Water Supply Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl19_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl19$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl19_mainid" value="36698" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl19_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl19$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl20_lblSRNO">19</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl20_Label2">Waste Disposal Plan</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl20_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl20$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl20_mainid" value="36697" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl20_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl20$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl21_lblSRNO">20</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl21_Label2">Proforma of Allotment Letter</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl21_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl21$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl21_mainid" value="36696" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl21_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl21$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl22_lblSRNO">21</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl22_Label2">Proforma of Application Form</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl22_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl22$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl22_mainid" value="36695" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl22_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl22$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl23_lblSRNO">22</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl23_Label2">Floor plans of all types</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl23_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl23$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl23_mainid" value="36694" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl23_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl23$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl24_lblSRNO">23</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl24_Label2">Floor plans of all types</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl24_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl24$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl24_mainid" value="36693" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl24_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl24$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl25_lblSRNO">24</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl25_Label2">Floor plans of all types</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl25_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl25$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl25_mainid" value="36692" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl25_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl25$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl26_lblSRNO">25</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl26_Label2">Commencement Certificate</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl26_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl26$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl26_mainid" value="36691" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl26_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl26$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl27_lblSRNO">26</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl27_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl27_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl27$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl27_mainid" value="36690" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl27_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl27$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl28_lblSRNO">27</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl28_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl28_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl28$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl28_mainid" value="36689" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl28_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl28$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl29_lblSRNO">28</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl29_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl29_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl29$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl29_mainid" value="36688" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl29_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl29$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl30_lblSRNO">29</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl30_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl30_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl30$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl30_mainid" value="36687" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl30_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl30$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl31_lblSRNO">30</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl31_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl31_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl31$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl31_mainid" value="36686" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl31_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl31$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl32_lblSRNO">31</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl32_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl32_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl32$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl32_mainid" value="36685" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl32_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl32$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl33_lblSRNO">32</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl33_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl33_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl33$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl33_mainid" value="36684" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl33_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl33$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl34_lblSRNO">33</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl34_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl34_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl34$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl34_mainid" value="36683" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl34_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl34$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl35_lblSRNO">34</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl35_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl35_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl35$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl35_mainid" value="36682" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl35_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl35$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl36_lblSRNO">35</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl36_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl36_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl36$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl36_mainid" value="36681" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl36_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl36$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl37_lblSRNO">36</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl37_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl37_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl37$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl37_mainid" value="36680" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl37_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl37$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl38_lblSRNO">37</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl38_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl38_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl38$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl38_mainid" value="36679" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl38_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl38$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl39_lblSRNO">38</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl39_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl39_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl39$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl39_mainid" value="36678" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl39_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl39$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl40_lblSRNO">39</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl40_Label2">Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl40_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl40$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl40_mainid" value="36677" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl40_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl40$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl41_lblSRNO">40</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl41_Label2">Sanctioned Layout Plan (Of Entire Project)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl41_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl41$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl41_mainid" value="36676" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl41_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl41$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl42_lblSRNO">41</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl42_Label2">Authentic copy of Approval of Project</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl42_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl42$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl42_mainid" value="36675" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl42_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl42$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl43_lblSRNO">42</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl43_Label2">Details of Encumbrances</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl43_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl43$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl43_mainid" value="36674" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl43_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl43$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl44_lblSRNO">43</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl44_Label2">Registry Document In Case of Own Land</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl44_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl44$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl44_mainid" value="36673" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl44_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl44$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl45_lblSRNO">44</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl45_Label2">Registry Document In Case of Own Land</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl45_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl45$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl45_mainid" value="36672" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl45_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl45$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#333333;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl46_lblSRNO">45</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl46_Label2">Registry Document In Case of Own Land</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl46_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl46$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl46_mainid" value="36671" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl46_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl46$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr><tr style="color:#284775;background-color:#F7F6F3;">
+				<td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl47_lblSRNO">46</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl47_Label2">Affidavit (Form-B)</span>
+                                            </td><td>
+                                                <span id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl47_Labdoc">Old</span>
+                                            </td><td>
+                                                
+                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl47$mainid" id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl47_mainid" value="24576" />
+                                                <a id="ctl00_ContentPlaceHolder1_grvdocumentdetails_ctl47_Lnkdownload" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grvdocumentdetails$ctl47$Lnkdownload&#39;,&#39;&#39;)" style="color: black">Download</a>&nbsp
+                                                
+                                                
+                                                
+                                                
+                                            </td>
+			</tr>
+		</table>
+	</div>
+                            </div>
+                        </div>
+                    
+</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="width: 800px">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">View OC/CC</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+	<table cellspacing="0" cellpadding="4" class="table table-hover table-condensed table-striped" border="0" id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2" style="color:#333333;width:100%;border-collapse:collapse;">
+		<tr style="color:White;background-color:Orange;font-weight:bold;">
+			<th scope="col">S.No</th><th scope="col">Promoter Reg.No.</th><th scope="col">PromoterName</th><th scope="col">Project Reg.No.</th><th align="center" scope="col">Document Type<br/></th><th scope="col">Upload Date</th><th scope="col">Document</th>
+		</tr><tr style="color:#333333;background-color:#F7F6F3;">
+			<td>
+                                    1
+                                </td><td>
+                                    <span id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2_ctl02_Promoter_id" style="display:inline-block;width:100px;">UPRERAPRM2628</span>
+                                </td><td>
+                                    <span id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2_ctl02_Promoter_Name" style="display:inline-block;width:140px;">ATS Realty Private Limited</span>
+                                </td><td>
+                                    <span id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2_ctl02_Project_Id" style="display:inline-block;width:100px;">UPRERAPRJ918</span>
+                                </td><td>
+                                    <span id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2_ctl02_lblflag">Completion Certificate</span>
+                                </td><td>
+                                    <span id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2_ctl02_comp_date" style="display:inline-block;width:70px;">01-04-2022</span>
+
+                                </td><td>
+                                    <a id="ctl00_ContentPlaceHolder1_grdproc_view_projectcomp2_ctl02_lnkfile" title="View Document" class="btn btn-link" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$grdproc_view_projectcomp2$ctl02$lnkfile&#39;,&#39;&#39;)"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                    
+                                </td>
+		</tr>
+	</table>
+</div>
+                    
+                    
+                    
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+        <!--================ start footer Area =================-->
+        <footer class="footer-area ">
+
+       
+            <div class="container-fluid">
+                <div class="row">
+                                    
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-widget">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a class="navbar-brand logo_h" href="index">
+                                        <img src="img/rera_logo.png" title="Rera Logo" alt="Rera Logo"  /></a>
+                                    <br />
+                                    <br />
+                                    <p>The Real Estate (Regulation and Development) Act, 2016 is an Act of the Parliament of India which seeks to protect home-buyers as well as help boost investments in the real estate industry. The Act came into force from 1 May 2016.</p>
+                               
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="single-footer-widget">
+                            <h6>Quick Links</h6>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="footer-nav">
+                                        <li><i class="ti-angle-right"></i>
+                                            <a href="index">home</a>
+                                        </li>
+                                        <li><i class="ti-angle-right"></i>
+                                            <a href="AboutUs" target="_blank">about </a>
+                                        </li>
+                                        <li><i class="ti-angle-right"></i>
+                                            <a href="applicationform" target="_blank">career </a>
+                                        </li>
+                                        <li><i class="ti-angle-right"></i>
+                                            <a href="Media" target="_blank">media</a>
+                                        </li>
+                                        <li><i class="ti-angle-right"></i>
+                                            <a href="downloads" target="_blank">downloads</a>
+                                        </li>
+                                        <li><i class="ti-angle-right"></i>
+                                            <a href="ContactUs" target="_blank">contact us</a>
+                                        </li>
+                                         <li><i class="ti-angle-right"></i>
+                                            <a href="Web_Information_Manager" target="_blank">Web Information Manager</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="single-footer-widget">
+                            <h6>Social Links</h6>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="footer-nav">
+                                        <li><a href="https://facebook.com/upreraofficial" target="_blank" title="Facebook"><i class="ti-angle-right"></i>Facebook</a>	</li>
+                                     
+                                        <li><a href="https://twitter.com/UPRERAofficial" target="_blank" title="Twitter"><i class="ti-angle-right"></i>Twitter</a>	</li>
+                                         <li style="display:none;"><a href="#" title="Linked In"><i class="ti-angle-right"></i>LinkedIn</a>	</li>
+                                        <li ><a href="https://www.youtube.com/channel/UCAeF0bOHPpzN-K9QvfA9rSQ" target="_blank" title="Youtube"><i class="ti-angle-right"></i>Youtube</a>	</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="single-footer-widget">
+                            <h6>Circulars & Notices </h6>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="footer-nav">
+                                        <li><a href="pdf/UPRERA_ATS_2018.pdf" target="_blank"><i class="ti-angle-right"></i>Agreement for Sale/Lease</a></li>
+                                        <li><a href="pdf/Order for CA,Architect,Engineer Certificate.pdf" target="_blank"><i class="ti-angle-right"></i>Order for CA, Architect, Engineer Certificate</a></li>
+                                        <li><a href="pdf/Portal_Editing_order.pdf" target="_blank"><i class="ti-angle-right"></i>Order For Project Registration & Editing</a></li>
+                                        <li><a href="pdf/SOP.pdf" target="_blank"><i class="ti-angle-right"></i>SOP for Complaint Redressal</a></li>
+                                        <li><a href="notices" target="_blank"><i class="ti-angle-right"></i>Click For More Notices...</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3">
+                        <div class="single-footer-widget">
+                            <h6>Other Links</h6>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="footer-nav">
+                                         <li><i class="ti-angle-right"></i>
+                                            <a href="DisclaimerandPolicies" target="_blank">Disclaimer and Policies</a>
+                                        </li>
+                                         <li><i class="ti-angle-right"></i>
+                                            <a href="RTIDOC" target="_blank">RTI</a>
+                                        </li>
+                                         <li><i class="ti-angle-right"></i>
+                                            <a href="TermCondition" target="_blank">Terms and Conditions</a>
+                                        </li>
+                                         <li><i class="ti-angle-right"></i>
+                                            <a href="Sitemap" target="_blank">Sitemap</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+        </footer>
+        <div class="container-fluid">
+
+            <div class="row" style="background-color:#6c757d">
+                    <div class="accessibilityDiv">
+                        <ul class="accessibility-icons list-unstyled list-inline font-zoom pull-left">
+                            <li class="language" style="display: inline;"><a style="font-size: 14px;" class="taglib-language-list-text" href="#">
+                                
+                                   <a href="https://facebook.com/upreraofficial" target="_blank" title="Facebook" ><i class="fa fa-facebook"></i></a>	
+                                &nbsp;
+                               <a href="https://twitter.com/UPRERAofficial" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>	
+                                   &nbsp;
+                                <a href="https://www.youtube.com/channel/UCAeF0bOHPpzN-K9QvfA9rSQ" target="_blank" title="Youtube"><i class="fa fa-youtube-play" style="color:red"></i></a>	
+                                  &nbsp;
+                                  &nbsp;
+                                <a href="#" class="taglib-language-list-text increase" title="Increase font size"> | +A</a>
+                                  &nbsp;
+                                  &nbsp;
+                                <a href="#" class="taglib-language-list-text resetMe" title="Restore default font size" style="padding: 2px 6px 2px 6px;">| A</a>
+                                  &nbsp;
+                                  &nbsp;
+                                <a href="#" class="taglib-language-list-text decrease" title="Decrease font size" style="">| -A</a>
+                                 &nbsp;
+                                  &nbsp;
+                                
+
+                                 <a style="font-size: 14px;" class=" taglib-language-list-text " href="ScreenReader.aspx" data-toggle="tooltip" title="Screen Reader Access"><span class="fa fa-desktop"></span>   </a>
+                                  &nbsp;
+                                  &nbsp;
+                                <a style="font-size: 14px;" class="taglib-language-list-text " href="Sitemap" data-toggle="tooltip" title="Sitemap"> <i class="fa fa-sitemap" aria-hidden="true"></i></a>
+                                         
+                                    &nbsp;
+                                  &nbsp;
+                             </a>
+
+
+                            </li>
+                       
+                        </ul>
+                    </div>
+                <div class="col-lg-12">
+                    <div class="footer-copy-right">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                  <p>
+   Copyright © 2026 UP-RERA , Concieved by: Uttar Pradesh Real Estate Regulatory Authority , Developed by : UPDESCO(Acme Digitek Solutions Pvt. Ltd)
+
+</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Last reviewed and updated on <span id="ctl00_lbllastupdated">07 Jul 2026</span></p>
+                            </div>
+                            <div class="col-sm-6">
+                               <p>  Version : 1.9.1 </p>
+                            </div>
+                        </div>
+                      
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <style>
+            .footer-copy-right {
+             padding:10px;
+         }
+         .footer-copyright-area {
+    background: #303030;
+    padding: 20px 0px;
+    text-align: center;
+    margin-left: 200px;
+}
+         .footer-copy-right p {
+    margin: 0px;
+    font-size: 15px;
+    color: #fff;
+    text-align:center;
+}
+         .footer-copy-right a {
+    color: #303030;
+}
+        </style>
+
+
+
+
+        <!--================ End footer Area =================-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+
+        
+
+<!--=======Header Script Start=====-->
+        <script src="multiselect/jquery.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="tcal.css" />
+    	<script type="text/javascript" src="tcal.js"></script> 
+        <script src="js/jquery-1.min.js"></script> 
+
+
+
+
+
+    <script>
+        // Code For Block Inspect Element in Browser
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+        $(document).keydown(function (e) {
+            if (e.which === 123) {
+                return false;
+            }
+        });
+
+       
+
+
+        //$('body').on("submit", "form", function () {
+        //    if (Page_ClientValidate() == true) {
+        //        ShowProgress();
+        //        return true;
+        //    }
+        //    else {
+        //        return false;
+        //    }
+        //});
+
+        //function ShowProgress() {
+        //    setTimeout(function () {
+        //        var modal = $('<div />');
+        //        modal.addClass("modal");
+        //        $('body').append(modal);
+        //        var loading = $(".loading");
+        //        loading.show();
+        //        var top = Math.max($(window).height() / 2 - loading[0].offsetHeight / 2, 0);
+        //        var left = Math.max($(window).width() / 2 - loading[0].offsetWidth / 2, 0);
+        //        loading.css({ top: top, left: left });
+        //    }, 200);
+        //}
+    </script>
+
+
+        
+<!--=======Header Script END=======-->
+
+
+
+
+<script src="js/popper.js"></script>        
+<script src="js/jquery-3.min.js"></script>
+<script src="multiselect/bootstrap.min.js"></script>
+<script src="JqueryCallender/js/jquery-12.js"></script>    
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/stellar.js"></script>
+<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.bootstrap.newsbox.min.js"></script>
+<script src="vendors/isotope/isotope.pkgd.min.js"></script>
+<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>       
+<script src="css/counter-up/jquery.counterup.js"></script>
+<script src="css/counter-up/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/theme.js"></script>
+    
+<script src="js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min-1.js"></script>
+
+<script src="multiselect/bootstrap-multiselect.js"></script>
+<script src="js/jquery.easy-ticker.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/custom.js"></script>
+     
+
+
+
+    
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'ctl00_menuBar', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script></form>
+</body>
+</html>

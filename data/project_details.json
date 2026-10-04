@@ -1,0 +1,1902 @@
+[
+  {
+    "registration_no": "UPRERAPRJ918",
+    "district": "Gautam Buddha Nagar",
+    "summary": {
+      "source": "summary.html",
+      "project_name": "ATS ALLURE",
+      "registration_no": "UPRERAPRJ918",
+      "registration_date": "31-07-2017",
+      "project_type": "Ongoing",
+      "coordinator_number": "9643007884",
+      "proposed_period_months": "63",
+      "proposed_start_date": "04-07-2014",
+      "declared_completion_date": "04-09-2019",
+      "promoter_mobile_contactbox": "9643007884",
+      "coordinator_number_contactbox": "9643007884",
+      "helpline_number": "",
+      "state": "Uttar Pradesh",
+      "district": "Gautam Buddha Nagar",
+      "tehsil": "Gautam Buddha Nagar",
+      "project_address": "PLOT No. P7, TS-02, SECTOR-22D, YEIDA.",
+      "promoter_name": "ATS REALTY PRIVATE LIMITED",
+      "promoter_applicant_type": "Company",
+      "promoter_mobile": "9643007884",
+      "promoter_email": "realty@atsgreens.com",
+      "promoter_address": "711/92, Deepali Nehru Place, South Delhi, India 110091",
+      "promoter_chairman_address": "711/92, Deepali Nehru Place, South Delhi, India 110091",
+      "promoter_total_projects": "3",
+      "promoter_total_complaints": "320 (Under Registration - 2 )",
+      "project_complaints": "285",
+      "form_id": "918",
+      "co_promoters": [],
+      "documents": [
+        {
+          "sno": "1",
+          "name": "Commencement Certificate",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "2",
+          "name": "Other Plan(If Any)",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "3",
+          "name": "Proforma of Application Form",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "4",
+          "name": "Proforma of Allotment Letter",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "5",
+          "name": "Proforma of Conveyance Deed",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "6",
+          "name": "Proforma of Completion Certificate(Occupancy)",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "7",
+          "name": "Waste Disposal Plan",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "8",
+          "name": "Water Supply Plan",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "9",
+          "name": "Electricity Supply Plan",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "10",
+          "name": "Development Work Plan",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "11",
+          "name": "Affidavit (Form-B)",
+          "upload_type": "NA",
+          "doc_id": ""
+        },
+        {
+          "sno": "12",
+          "name": "ENGINEERS CERTIFICATE",
+          "upload_type": "New",
+          "doc_id": "49420"
+        },
+        {
+          "sno": "13",
+          "name": "ARCHITECT CERTIFICATE",
+          "upload_type": "New",
+          "doc_id": "49416"
+        },
+        {
+          "sno": "14",
+          "name": "CA CERTIFICATE",
+          "upload_type": "New",
+          "doc_id": "49412"
+        },
+        {
+          "sno": "15",
+          "name": "Details of Encumbrances",
+          "upload_type": "New",
+          "doc_id": "44230"
+        },
+        {
+          "sno": "16",
+          "name": "Development Work Plan",
+          "upload_type": "Old",
+          "doc_id": "36700"
+        },
+        {
+          "sno": "17",
+          "name": "Electricity Supply Plan",
+          "upload_type": "Old",
+          "doc_id": "36699"
+        },
+        {
+          "sno": "18",
+          "name": "Water Supply Plan",
+          "upload_type": "Old",
+          "doc_id": "36698"
+        },
+        {
+          "sno": "19",
+          "name": "Waste Disposal Plan",
+          "upload_type": "Old",
+          "doc_id": "36697"
+        },
+        {
+          "sno": "20",
+          "name": "Proforma of Allotment Letter",
+          "upload_type": "Old",
+          "doc_id": "36696"
+        },
+        {
+          "sno": "21",
+          "name": "Proforma of Application Form",
+          "upload_type": "Old",
+          "doc_id": "36695"
+        },
+        {
+          "sno": "22",
+          "name": "Floor plans of all types",
+          "upload_type": "Old",
+          "doc_id": "36694"
+        },
+        {
+          "sno": "23",
+          "name": "Floor plans of all types",
+          "upload_type": "Old",
+          "doc_id": "36693"
+        },
+        {
+          "sno": "24",
+          "name": "Floor plans of all types",
+          "upload_type": "Old",
+          "doc_id": "36692"
+        },
+        {
+          "sno": "25",
+          "name": "Commencement Certificate",
+          "upload_type": "Old",
+          "doc_id": "36691"
+        },
+        {
+          "sno": "26",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36690"
+        },
+        {
+          "sno": "27",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36689"
+        },
+        {
+          "sno": "28",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36688"
+        },
+        {
+          "sno": "29",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36687"
+        },
+        {
+          "sno": "30",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36686"
+        },
+        {
+          "sno": "31",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36685"
+        },
+        {
+          "sno": "32",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36684"
+        },
+        {
+          "sno": "33",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36683"
+        },
+        {
+          "sno": "34",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36682"
+        },
+        {
+          "sno": "35",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36681"
+        },
+        {
+          "sno": "36",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36680"
+        },
+        {
+          "sno": "37",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36679"
+        },
+        {
+          "sno": "38",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36678"
+        },
+        {
+          "sno": "39",
+          "name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "upload_type": "Old",
+          "doc_id": "36677"
+        },
+        {
+          "sno": "40",
+          "name": "Sanctioned Layout Plan (Of Entire Project)",
+          "upload_type": "Old",
+          "doc_id": "36676"
+        },
+        {
+          "sno": "41",
+          "name": "Authentic copy of Approval of Project",
+          "upload_type": "Old",
+          "doc_id": "36675"
+        },
+        {
+          "sno": "42",
+          "name": "Details of Encumbrances",
+          "upload_type": "Old",
+          "doc_id": "36674"
+        },
+        {
+          "sno": "43",
+          "name": "Registry Document In Case of Own Land",
+          "upload_type": "Old",
+          "doc_id": "36673"
+        },
+        {
+          "sno": "44",
+          "name": "Registry Document In Case of Own Land",
+          "upload_type": "Old",
+          "doc_id": "36672"
+        },
+        {
+          "sno": "45",
+          "name": "Registry Document In Case of Own Land",
+          "upload_type": "Old",
+          "doc_id": "36671"
+        },
+        {
+          "sno": "46",
+          "name": "Affidavit (Form-B)",
+          "upload_type": "Old",
+          "doc_id": "24576"
+        }
+      ]
+    },
+    "viewprojects": {
+      "source": "viewprojects.html",
+      "project_name": "ATS ALLURE",
+      "project_id_raw": "(UPRERAPRJ918)",
+      "registration_date": "31-07-2017",
+      "promoter_name": "ATS Realty Private Limited",
+      "promoter_id_raw": "(UPRERAPRM2628)",
+      "project_type": "Ongoing",
+      "project_category": "Residential",
+      "registration_fee": "43520",
+      "state": "Uttar Pradesh",
+      "project_duration_months": "80",
+      "proposed_start_date_lbl": "Proposed Start Date",
+      "revised_end_date_lbl": "Revised End Date",
+      "tehsil": "Gautam Buddha Nagar",
+      "registration_no": "UPRERAPRJ918",
+      "promoter_id": "UPRERAPRM2628",
+      "agents": [
+        {
+          "SNo.": "1",
+          "Agent Name": "360 REALTORS LLP - UPRERAAGT10868"
+        },
+        {
+          "SNo.": "2",
+          "Agent Name": "EMPOWER REALTECH PRIVATE LIMITED - UPRERAAGT10623"
+        },
+        {
+          "SNo.": "3",
+          "Agent Name": "Haveon Deal Services Pvt Ltd - UPRERAAGT11643"
+        },
+        {
+          "SNo.": "4",
+          "Agent Name": "INVESTORS CLINIC INFRATECH PRIVATE LIMITED - UPRERAAGT10052"
+        },
+        {
+          "SNo.": "5",
+          "Agent Name": "JAI AMBEY CONSULTANTS - UPRERAAGT11064"
+        },
+        {
+          "SNo.": "6",
+          "Agent Name": "Prachi Mehrotra - UPRERAAGT16191"
+        },
+        {
+          "SNo.": "7",
+          "Agent Name": "SMC Real Estate Advisors Private Limited - UPRERAAGT10113"
+        },
+        {
+          "SNo.": "8",
+          "Agent Name": "star estate - UPRERAAGT10202"
+        }
+      ],
+      "permits": [
+        {
+          "SNo.": "1",
+          "Orignal Permit No": "745/PLNG/BP-08/P-07",
+          "Orignal Permit Date": "14-11-2013",
+          "Valid Upto": "13-11-2018",
+          "Revalidated Permit No": "",
+          "Revalidated Permit Date": "",
+          "Revalidated Permit Valid Upto": "",
+          "Permit Extendable Upto": "13-11-2023",
+          "End Date": "04-09-2019",
+          "Uploaded Approve Layout": "Download",
+          "Uploaded Sanctioned Letter": "Download",
+          "Uploaded Approved Map": "Download",
+          "Uploaded Floor Plan Of All Types": "Download",
+          "Uploaded  Project Specifications": "Download",
+          "Uploaded Sajra Detail": ""
+        },
+        {
+          "SNo.": "2",
+          "Orignal Permit No": "745/PLNG/BP-08/P-07",
+          "Orignal Permit Date": "14-11-2013",
+          "Valid Upto": "13-11-2018",
+          "Revalidated Permit No": "745/PLNG/BP-08/P-07",
+          "Revalidated Permit Date": "14-11-2013",
+          "Revalidated Permit Valid Upto": "01-01-1900",
+          "Permit Extendable Upto": "13-11-2023",
+          "End Date": "04-09-2019",
+          "Uploaded Approve Layout": "Download",
+          "Uploaded Sanctioned Letter": "Download",
+          "Uploaded Approved Map": "Download",
+          "Uploaded Floor Plan Of All Types": "Download",
+          "Uploaded  Project Specifications": "Download",
+          "Uploaded Sajra Detail": ""
+        }
+      ],
+      "development_works": [
+        {
+          "Development Work Name": "Demarcation of Plots",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Boundary Wall",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Road Work",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Footpaths",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Water Supply Including Drinking Water Facilities",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Sewer System",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Drain",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Parks",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Tree Planting",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Design For Electric Supply Including Street Lighting",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Community Buildings",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Treatment and Disposal System of Sewage and Sullage water",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Solid Waste Management And Disposal System",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Water Conservation System",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Energy Management System Including Use of Renewable Energy",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Fire Protection And Fire Safety System",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Social Infrastructure And Other Public Amenities Including Public Health Services",
+          "Brief Descriptions": "NA"
+        },
+        {
+          "Development Work Name": "Emergency Evacuation Services",
+          "Brief Descriptions": "YES"
+        },
+        {
+          "Development Work Name": "Other Miscellaneous   Work",
+          "Brief Descriptions": "NA"
+        }
+      ],
+      "account_collection": [],
+      "account_separate": [],
+      "account_transaction": [],
+      "land_documents": [
+        {
+          "Sr. No.": "1",
+          "Document Name": "Lease Deed",
+          "Number": "14371",
+          "Date": "12-06-2013",
+          "Uploaded Document": "9185699ATS Allure_ Sub Lease Deed (1).pdf"
+        },
+        {
+          "Sr. No.": "2",
+          "Document Name": "Lease Deed",
+          "Number": "27755",
+          "Date": "17-10-2013",
+          "Uploaded Document": "9187598ATS Allure_ Sub Lease Deed Supplementary.pdf"
+        }
+      ],
+      "land_details": [
+        {
+          "Sr. No.": "1",
+          "Type": "Plot",
+          "Khasra No": "PLOT NO. P7, TS-02, SECTOR-22D, YEIDA, UP",
+          "Khasra Area": "34323"
+        }
+      ],
+      "plan_details": [
+        {
+          "Sr. No.": "1",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "BSMNT2",
+          "Flat/ Apartment/ Shop/Plot type": "OTHER",
+          "Number of Apartment/Flats/Shop": "0",
+          "Unit Carpet Area (in sqm)": "0",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "2",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "79.99",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "14.40",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "3",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "79.99",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "14.40",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "4",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "10.59",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "5",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "10.59",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "6",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "10.59",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "7",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "10.59",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "8",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "1",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "20",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "9",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "1",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "79.99",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "13.75",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "10",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "1",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "79.99",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "13.75",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "11",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "2",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "20",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "12",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "2",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "13",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "2",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "5",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "14",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "3",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "15",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "4",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "16",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "5",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "17",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "6",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "18",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "7",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "19",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "8",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "20",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "9",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "21",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "10",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "22",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "11",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "23",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "12",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "24",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "13",
+          "Flat/ Apartment/ Shop/Plot type": "OTHER",
+          "Number of Apartment/Flats/Shop": "0",
+          "Unit Carpet Area (in sqm)": "0",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "25",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "14",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "26",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "15",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "27",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "16",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "28",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "17",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "29",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "18",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "30",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "19",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "31",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "20",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "32",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "21",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "33",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "22",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "34",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "23",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "35",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "24",
+          "Flat/ Apartment/ Shop/Plot type": "2 BHK",
+          "Number of Apartment/Flats/Shop": "30",
+          "Unit Carpet Area (in sqm)": "70.23",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "36",
+          "Block No": "TOWER-2,3,4,6 & 7",
+          "Floor Number": "BSMNT",
+          "Flat/ Apartment/ Shop/Plot type": "OTHER",
+          "Number of Apartment/Flats/Shop": "0",
+          "Unit Carpet Area (in sqm)": "0",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "37",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "BSMNT",
+          "Flat/ Apartment/ Shop/Plot type": "OTHER",
+          "Number of Apartment/Flats/Shop": "0",
+          "Unit Carpet Area (in sqm)": "0",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "38",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "BSMNT2",
+          "Flat/ Apartment/ Shop/Plot type": "OTHER",
+          "Number of Apartment/Flats/Shop": "0",
+          "Unit Carpet Area (in sqm)": "0",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "39",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "3",
+          "Unit Carpet Area (in sqm)": "112.41",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "15.24",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "40",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "3",
+          "Unit Carpet Area (in sqm)": "112.41",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "4",
+          "Total Area of Verandah (in sqm)": "15.24",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "41",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "6",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "3",
+          "Total Area of Verandah (in sqm)": "10.59",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "42",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "GF",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "6",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "3",
+          "Total Area of Verandah (in sqm)": "10.59",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "43",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "1",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "12",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "44",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "1",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "3",
+          "Unit Carpet Area (in sqm)": "112.41",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "14.31",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "45",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "1",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "3",
+          "Unit Carpet Area (in sqm)": "112.41",
+          "Number of Balcony": "4",
+          "Total Area of Balcony (in sqm)": "14.31",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "46",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "2",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "12",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "47",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "2",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "3",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "48",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "2",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "3",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "49",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "3",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "50",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "4",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "51",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "5",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "52",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "6",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "53",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "7",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "54",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "8",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "55",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "9",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "56",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "10",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "57",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "11",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "58",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "12",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "59",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "13",
+          "Flat/ Apartment/ Shop/Plot type": "OTHER",
+          "Number of Apartment/Flats/Shop": "0",
+          "Unit Carpet Area (in sqm)": "0",
+          "Number of Balcony": "0",
+          "Total Area of Balcony (in sqm)": "0",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "60",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "14",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "61",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "15",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "62",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "16",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "63",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "17",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "64",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "18",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "65",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "19",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "66",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "20",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "67",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "21",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "68",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "22",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "69",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "23",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "18",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        },
+        {
+          "Sr. No.": "70",
+          "Block No": "TOWER-1, 5 & 8",
+          "Floor Number": "24",
+          "Flat/ Apartment/ Shop/Plot type": "3 BHK",
+          "Number of Apartment/Flats/Shop": "12",
+          "Unit Carpet Area (in sqm)": "83.24",
+          "Number of Balcony": "3",
+          "Total Area of Balcony (in sqm)": "10.59",
+          "Number of Verandah": "0",
+          "Total Area of Verandah (in sqm)": "0",
+          "No. of garrage": "0",
+          "Total Area of garage (in sqm)": "0",
+          "Open Parking Space (in Nos.)": "0"
+        }
+      ],
+      "khasra": [
+        {
+          "Sr. No.": "1",
+          "Khasra/Plot Number *": "PLOT NO. P7, TS-02, SECTOR-22D, YEIDA, UP",
+          "Area *": "34323",
+          "Type *": "Plot",
+          "Uploaded Sale Deed/Lease Deed/Extract of Khatauni/Allotment Letter issued by Competent Authority *": ""
+        }
+      ],
+      "registry_agreements": [
+        {
+          "Sr. No.": "1",
+          "Registry/Agreement Number *": "14371",
+          "Registry/Agreement Date *": "12-06-2013",
+          "Land Type *": "Own",
+          "Registry/Agreement Area *": "",
+          "Upload Legal/Registry Document *": ""
+        }
+      ],
+      "documents": [
+        {
+          "document_name": "Commencement Certificate",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Other Plan(If Any)",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Proforma of Application Form",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Proforma of Allotment Letter",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Proforma of Conveyance Deed",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Proforma of Completion Certificate(Occupancy)",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Waste Disposal Plan",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Water Supply Plan",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Electricity Supply Plan",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Development Work Plan",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Affidavit (Form-B)",
+          "file_name": "Promoter select NA for this document",
+          "uploaded_date": "",
+          "upload_type": "",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/Promoter%20select%20NA%20for%20this%20document"
+        },
+        {
+          "document_name": "Details of Encumbrances",
+          "file_name": "PRJ84-918New Encumbranches details recd on 02 Jun 18 - RERA - Allure.pdf",
+          "uploaded_date": "20-06-2018",
+          "upload_type": "New",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ84-918New%20Encumbranches%20details%20recd%20on%2002%20Jun%2018%20-%20RERA%20-%20Allure.pdf"
+        },
+        {
+          "document_name": "CA CERTIFICATE",
+          "file_name": "PRJ36-9189 ATS Allure.pdf",
+          "uploaded_date": "06-07-2018",
+          "upload_type": "New",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ36-9189%20ATS%20Allure.pdf"
+        },
+        {
+          "document_name": "ARCHITECT CERTIFICATE",
+          "file_name": "PRJ96-918Arch  Cert Allure.pdf",
+          "uploaded_date": "06-07-2018",
+          "upload_type": "New",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ96-918Arch%20%20Cert%20Allure.pdf"
+        },
+        {
+          "document_name": "ENGINEERS CERTIFICATE",
+          "file_name": "PRJ63-918EngCert Allure.pdf",
+          "uploaded_date": "06-07-2018",
+          "upload_type": "New",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ63-918EngCert%20Allure.pdf"
+        },
+        {
+          "document_name": "Affidavit (Form-B)",
+          "file_name": "PRJ9182. ATS Allure.pdf",
+          "uploaded_date": "27-07-2017",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9182.%20ATS%20Allure.pdf"
+        },
+        {
+          "document_name": "Registry Document In Case of Own Land",
+          "file_name": "PRJ918ATS Allure_ Sub Lease Deed Supplementary (2 files merged).pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ATS%20Allure_%20Sub%20Lease%20Deed%20Supplementary%20%282%20files%20merged%29.pdf"
+        },
+        {
+          "document_name": "Registry Document In Case of Own Land",
+          "file_name": "PRJ918ATS Allure_ Sub Lease Deed Supplementary.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ATS%20Allure_%20Sub%20Lease%20Deed%20Supplementary.pdf"
+        },
+        {
+          "document_name": "Registry Document In Case of Own Land",
+          "file_name": "PRJ918ATS Allure_ Sub Lease Deed.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ATS%20Allure_%20Sub%20Lease%20Deed.pdf"
+        },
+        {
+          "document_name": "Details of Encumbrances",
+          "file_name": "PRJ918Encumbrance Details - ALLURE.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918Encumbrance%20Details%20-%20ALLURE.pdf"
+        },
+        {
+          "document_name": "Authentic copy of Approval of Project",
+          "file_name": "PRJ918Sanction Letter - ATS ALLURE.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918Sanction%20Letter%20-%20ATS%20ALLURE.pdf"
+        },
+        {
+          "document_name": "Sanctioned Layout Plan (Of Entire Project)",
+          "file_name": "PRJ9181-SITE PLAN.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9181-SITE%20PLAN.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ9186-COMMUNITY_CENTER_GF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9186-COMMUNITY_CENTER_GF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ9187-COMMUNITY_CENTER_FF_SF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9187-COMMUNITY_CENTER_FF_SF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ9188-3BHK_T1_8_GF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9188-3BHK_T1_8_GF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ9189-3BHK_T1_8_FF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9189-3BHK_T1_8_FF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91810-3BHK_T1_8_SF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91810-3BHK_T1_8_SF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91811-3BHK_T1_8_TYPICAL FLOOR.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91811-3BHK_T1_8_TYPICAL%20FLOOR.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91817-3BHK_T5_GF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91817-3BHK_T5_GF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91818-3BHK_T5_FF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91818-3BHK_T5_FF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91819-3BHK_T5_SF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91819-3BHK_T5_SF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91820-3BHK_T5_TYPICAL FLOOR.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91820-3BHK_T5_TYPICAL%20FLOOR.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91826-2BHK-T2_3_4_6_7_GF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91826-2BHK-T2_3_4_6_7_GF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91827-2BHK-T2_3_4_6_7_FF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91827-2BHK-T2_3_4_6_7_FF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91828-2BHK-T2_3_4_6_7_SF.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91828-2BHK-T2_3_4_6_7_SF.pdf"
+        },
+        {
+          "document_name": "Sanctioned Building/ Block Plan (Add Plans for All Buildings or Blocks)",
+          "file_name": "PRJ91829-2BHK-T2_3_4_6_7_TYP_FLOOR.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ91829-2BHK-T2_3_4_6_7_TYP_FLOOR.pdf"
+        },
+        {
+          "document_name": "Commencement Certificate",
+          "file_name": "PRJ918Environment Clearance - ATS ALLURE.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918Environment%20Clearance%20-%20ATS%20ALLURE.pdf"
+        },
+        {
+          "document_name": "Floor plans of all types",
+          "file_name": "PRJ9182BHK- 1150 SQFT.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9182BHK-%201150%20SQFT.pdf"
+        },
+        {
+          "document_name": "Floor plans of all types",
+          "file_name": "PRJ9183BHK- 1350 SQFT.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ9183BHK-%201350%20SQFT.pdf"
+        },
+        {
+          "document_name": "Floor plans of all types",
+          "file_name": "PRJ918SITE PLAN.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918SITE%20PLAN.pdf"
+        },
+        {
+          "document_name": "Proforma of Application Form",
+          "file_name": "PRJ918Application Form_Rera.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918Application%20Form_Rera.pdf"
+        },
+        {
+          "document_name": "Proforma of Allotment Letter",
+          "file_name": "PRJ918Allotment Letter RERA.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918Allotment%20Letter%20RERA.pdf"
+        },
+        {
+          "document_name": "Waste Disposal Plan",
+          "file_name": "PRJ918ALLURE- SOLID WASTE MANAGEMENT PLAN.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ALLURE-%20SOLID%20WASTE%20MANAGEMENT%20PLAN.pdf"
+        },
+        {
+          "document_name": "Water Supply Plan",
+          "file_name": "PRJ918ALLURE- WATER SUPPLY LAYOUT PLAN...pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ALLURE-%20WATER%20SUPPLY%20LAYOUT%20PLAN...pdf"
+        },
+        {
+          "document_name": "Electricity Supply Plan",
+          "file_name": "PRJ918ALLURE ELECTRICAL EARTH STATION LAYOUT PLAN.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ALLURE%20ELECTRICAL%20EARTH%20STATION%20LAYOUT%20PLAN.pdf"
+        },
+        {
+          "document_name": "Development Work Plan",
+          "file_name": "PRJ918ALLURE STORM AND SEWER LAYOUT PLAN.pdf",
+          "uploaded_date": "09-01-2018",
+          "upload_type": "Old",
+          "blob_url": "https://upreradisk.blob.core.windows.net/azureportaldeploy/PRJ918ALLURE%20STORM%20AND%20SEWER%20LAYOUT%20PLAN.pdf"
+        }
+      ],
+      "form_id": ""
+    }
+  }
+]
