@@ -24,6 +24,8 @@
  * Env (read from .env at the repo root, or the shell):
  *   REAL_ESTATE_BACKEND_URL   default http://127.0.0.1:8888
  *   REEL_BLOG_BASE_URL        public blog base, used for the blog link. default https://acreinfotech.com/blog
+ *   REEL_LANGUAGE             "Hindi/Hinglish" (default) or "English" — read by the Reel
+ *                             Producer agent, which writes the reel in that language.
  *   DASHBOARD_URL, DASHBOARD_API_TOKEN   same as the other crons
  */
 import { dashboardFetch } from "../lib/dashboardApi.mjs";
@@ -33,6 +35,11 @@ loadEnv();
 const BACKEND_URL = process.env.REAL_ESTATE_BACKEND_URL ?? "http://127.0.0.1:8888";
 const BLOG_BASE_URL = (process.env.REEL_BLOG_BASE_URL ?? "https://acreinfotech.com/blog").replace(/\/$/, "");
 const PIPELINE_NAME = "Real Estate Content · Reel From Blog";
+// The audience is Indian and connects better in Hindi than English, so reels default to
+// Hinglish (Devanagari script, English nouns like EMI/RERA kept in Latin) — see the Reel
+// Producer prompt in agentic_ai_workflow and video_code's SKILL.md "Writing for
+// Hindi/Hinglish reels". Set REEL_LANGUAGE=English in the environment to go back to English.
+const REEL_LANGUAGE = process.env.REEL_LANGUAGE ?? "Hindi/Hinglish";
 
 const dryRun = process.argv.includes("--dry-run");
 
@@ -58,6 +65,7 @@ function buildTriggerInput(blog) {
     `Slug: ${blog.slug}`,
     `Blog URL: ${BLOG_BASE_URL}/${blog.slug}`,
     `SEO description: ${blog.seoDescription ?? ""}`,
+    `Language: ${REEL_LANGUAGE}`,
     "",
     "Blog body (Markdown):",
     blog.body,
