@@ -11,9 +11,12 @@ logs/*.log
 __pycache__/
 *.pyc
 
-# data/media/ is deliberately not ignored — derived from source brochure PDFs
-# outside the repo, currently the only copy of that extraction work, small
-# enough to track directly. Move to object storage (and ignore here) before
-# it outgrows git.
+# Images live in R2 (media/<reg>/...), uploaded by brochure_content.py /
+# migrate_to_r2.mjs; data/media/ is only the local working copy.
+data/media/
+# Raw UP-RERA HTML pages, re-downloadable with crawler/fetch_details.py.
+data/pages/
+# brochure_content.py work files: brochure PDF, page renders, raw Claude reply.
+crawler/data/brochure_work/
 
 .DS_Store

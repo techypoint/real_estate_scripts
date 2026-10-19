@@ -54,6 +54,7 @@ migrate_to_r2.mjs       One-off cutover script (see docs at repo root)
 | `parse_viewprojects.py` | Parse a saved **View Project In Detail** page → JSON/CSV + `file_manifest.csv` (with blob URLs). |
 | `download_files.py` | Download all document PDFs referenced in an exported `uprera_details.json` → `../data/files/<reg_no>/`. |
 | `merge_details.py` | Join collected details to a district list on registration number. |
+| `brochure_finder.py` | Find each project's brochure on the builder's own website → R2 `brochures/<reg>/` + `brochure` in Mongo. See [`crawler/BROCHURES.md`](crawler/BROCHURES.md). |
 | `requirements.txt` | `requests`, `beautifulsoup4` (also uses `curl_cffi` when available). Installed into `.venv/`. |
 
 ### Chrome extension — `crawler/uprera_extension/`

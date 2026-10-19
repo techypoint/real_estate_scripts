@@ -1,0 +1,293 @@
+{
+  "registration_no": "UPRERAPRJ918",
+  "slug": "ats-allure-sector-22d-yamuna-expressway",
+  "published": true,
+  "marketing": {
+    "display_name": "ATS Allure",
+    "tagline": "The Art of Graceful Living.",
+    "locality": "Sector-22D, Yamuna Expressway",
+    "highlights": [
+      "Premium residences at the 100 Acre Township of ATS Province-De-Olympia",
+      "Art Deco towers designed by architect Hafeez Contractor",
+      "Along the controlled-access 8-lane Yamuna Expressway",
+      "Spacious greens, clubhouse and swimming pool"
+    ]
+  },
+  "scale": {
+    "tower_count": 8
+  },
+  "unit_types": [
+    {
+      "key": "type-a-3bhk-1350",
+      "bhk": 3,
+      "variant": "Type A",
+      "areas": {
+        "super": {
+          "sqft": 1350
+        },
+        "built_up": {
+          "sqft": 1137
+        },
+        "carpet": {
+          "sqft": 896
+        }
+      },
+      "source_ref": {
+        "source_id": "brochure",
+        "page": 8,
+        "confidence": "medium",
+        "note": "BHK is not printed. 3 BHK is a count of the bedrooms drawn on the plan (Master Bed, Bedroom 01, Bedroom 02). Areas are printed as Total Area 1350 / Unit Built up Area 1137 / Carpet Area 896 sq. ft., plus Common Circulation + Services 213 sq. ft."
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ918/type-a-3bhk-1350-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — ATS Allure Type A, 1350 sq.ft.",
+            "width": 1134,
+            "height": 1062
+          }
+        ]
+      }
+    },
+    {
+      "key": "type-b-2bhk-1150",
+      "bhk": 2,
+      "variant": "Type B",
+      "areas": {
+        "super": {
+          "sqft": 1150
+        },
+        "built_up": {
+          "sqft": 961
+        },
+        "carpet": {
+          "sqft": 756
+        }
+      },
+      "source_ref": {
+        "source_id": "brochure",
+        "page": 9,
+        "confidence": "medium",
+        "note": "BHK is not printed. 2 BHK is a count of the bedrooms drawn on the plan (Master Bed, Bedroom 01). Areas are printed as Total Area 1150 / Unit Built up Area 961 / Carpet Area 756 sq. ft., plus Common Circulation + Services 189 sq. ft."
+      },
+      "media": {
+        "plan_2d": [
+          {
+            "url": "media/UPRERAPRJ918/type-b-2bhk-1150-2d.webp",
+            "label": "Unit Plan",
+            "alt": "2D floor plan — ATS Allure Type B, 1150 sq.ft.",
+            "width": 954,
+            "height": 1026
+          }
+        ]
+      }
+    }
+  ],
+  "amenities": [
+    {
+      "group": "Clubhouse & Sports Facilities",
+      "items": [
+        "Clubhouse with Swimming Pool",
+        "His/Her Change Rooms",
+        "Well Equipped Gym",
+        "Indoor & Outdoor Games Areas",
+        "Multi-Purpose Hall",
+        "Utility Stores",
+        "Squash Court",
+        "Table Tennis",
+        "Cardroom",
+        "Billiards/Pool Room",
+        "Basketball Court",
+        "Children's Play Area",
+        "Badminton Court",
+        "Lawn Tennis Court",
+        "Jogging Track"
+      ]
+    },
+    {
+      "group": "Security",
+      "items": [
+        "Provision for Optical Fiber Network",
+        "Video Surveillance System",
+        "Perimeter Security",
+        "Entrance Lobby Security with CCTV Cameras",
+        "Fire Prevention, Suppression, Detection & Alarm System"
+      ]
+    }
+  ],
+  "clubs": [
+    {
+      "name": "Clubhouse",
+      "note": "Clubhouse with swimming pool: his/her change rooms, gym, indoor & outdoor games areas, multi-purpose hall, squash court, table tennis, cardroom and billiards/pool room."
+    }
+  ],
+  "connectivity": [
+    {
+      "name": "Yamuna Expressway",
+      "category": "road"
+    },
+    {
+      "name": "Buddh International Circuit",
+      "category": "other"
+    },
+    {
+      "name": "ICC Cricket Stadium",
+      "category": "other"
+    },
+    {
+      "name": "The Great Adventure Mall",
+      "category": "mall"
+    },
+    {
+      "name": "NIIT",
+      "category": "school"
+    },
+    {
+      "name": "G. Buddha University",
+      "category": "school"
+    },
+    {
+      "name": "Noida International University",
+      "category": "school"
+    },
+    {
+      "name": "Galgotias University",
+      "category": "school"
+    },
+    {
+      "name": "Gaur Yamuna City",
+      "category": "other"
+    },
+    {
+      "name": "Supertech Up Country",
+      "category": "other"
+    }
+  ],
+  "specifications": [
+    {
+      "room": "Apartment",
+      "items": [
+        {
+          "label": "Flooring",
+          "value": "Marble/vitrified tiles flooring in living, dining & lobby. Wooden/vitrified tile flooring in bedrooms. Vitrified tiles in kitchen. Utility, servant room and toilets in ceramic tiles. Staircase & landings to be provided in marble/kota, terrazzo flooring. Balconies will be in anti-skid ceramic flooring."
+        },
+        {
+          "label": "Dado",
+          "value": "Ceramic tiles of required height in Toilets & 600mm height above Kitchen Counter Slab in appropriate Colour & Paint."
+        },
+        {
+          "label": "Painting",
+          "value": "OBD of appropriate colour on interior walls & Ceilings."
+        },
+        {
+          "label": "Kitchen",
+          "value": "All Kitchen Counters in pre-polished Granite/premium marble Stone, electrical points for Kitchen Chimney & Hob. Stainless Steel Sink, premium CP Fittings."
+        },
+        {
+          "label": "Doors & Windows",
+          "value": "Main entrance door as engineered door with Polished Wood Veneer and Solid Wood/Timber Frame. All internal doors are flush/skin doors-polished/enamel painted; stainless steel/brass finished hardware fittings for main door & aluminium powder coated hardware fitting and locks of branded make. Door frames and window panels of aluminium/UPVC sections. All hardware in powder coated aluminium. Size and section as per design of the architect."
+        },
+        {
+          "label": "Plumbing",
+          "value": "As per standard practice, all internal plumbing in GI/CPVC/Composite."
+        },
+        {
+          "label": "Toilet",
+          "value": "Premium sanitary fixtures. Premium Chrome Plated fittings."
+        },
+        {
+          "label": "Electrical",
+          "value": "All electrical wiring in concealed conduits; provision for adequate light & power points. Telephone & T.V. outlets in Drawing, Dining and all bedrooms; moulded modular plastic switches & protective MCB's."
+        }
+      ]
+    },
+    {
+      "room": "Building",
+      "items": [
+        {
+          "label": "Exterior",
+          "value": "Appropriate finish of Texture Paint of exterior grade."
+        },
+        {
+          "label": "Lift",
+          "value": "Lifts to be provided for access to all floors."
+        },
+        {
+          "label": "Generators",
+          "value": "Generator to be provided for 100 % backup of Emergency & Safety facilities, Lifts & Common areas."
+        },
+        {
+          "label": "Security & FTTH",
+          "value": "Provision for Optical fiber network; Video surveillance system, Perimeter Security and Entrance lobby Security with CCTV cameras; Fire prevention, suppression, Detection & alarm system as per fire norms."
+        },
+        {
+          "label": "Structure",
+          "value": "Earthquake resistant RCC framed structure as per applicable Seismic Zone."
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "url": "media/UPRERAPRJ918/towers-pool-view.webp",
+      "label": "Elegant Residences",
+      "alt": "ATS Allure Art Deco residential towers around the landscaped swimming pool",
+      "width": 1782,
+      "height": 1044,
+      "order": 1
+    },
+    {
+      "url": "media/UPRERAPRJ918/aerial-view-expressway.webp",
+      "label": "Aerial View",
+      "alt": "Aerial render of the eight ATS Allure towers beside the Yamuna Expressway",
+      "width": 1800,
+      "height": 1278,
+      "order": 2
+    },
+    {
+      "url": "media/UPRERAPRJ918/towers-clubhouse-pool.webp",
+      "label": "Towers & Pool Deck",
+      "alt": "Two ATS Allure towers with the pool deck in front (artistic impression)",
+      "width": 1656,
+      "height": 1350,
+      "order": 3
+    },
+    {
+      "url": "media/UPRERAPRJ918/top-down-aerial.webp",
+      "label": "Top-Down Aerial View",
+      "alt": "Top-down aerial render of ATS Allure towers ringing the central pool and greens (artistic impression)",
+      "width": 1800,
+      "height": 1530,
+      "order": 4
+    }
+  ],
+  "master_plan": [
+    {
+      "url": "media/UPRERAPRJ918/site-plan.webp",
+      "label": "Site Map",
+      "alt": "ATS Allure site map showing towers T-1 to T-8, clubhouse, pool, courts and 30 m wide road entry",
+      "width": 1566,
+      "height": 1296
+    }
+  ],
+  "location_map": [
+    {
+      "url": "media/UPRERAPRJ918/location-map.webp",
+      "label": "Location Map",
+      "alt": "Illustrated map of ATS Allure, Sector-22D, along the Yamuna Expressway with nearby universities, mall and Buddh International Circuit",
+      "width": 1800,
+      "height": 1458
+    }
+  ],
+  "sources": [
+    {
+      "id": "brochure",
+      "label": "ATS Allure builder brochure",
+      "type": "brochure",
+      "as_of": "2026-10-19",
+      "url": "brochures/UPRERAPRJ918/Allure_Brochurer_.pdf"
+    }
+  ],
+  "updated_by": "brochure_content.py"
+}

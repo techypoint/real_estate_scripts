@@ -1,0 +1,1794 @@
+[
+  {
+    "sno": "1",
+    "registration_no": "UPRERAPRJ331046/06/2025",
+    "project_name": "21 Nos. Commercial Plot At Sector-2C Sikandra Yojna Agra",
+    "promoter_name": "U.P. Awas Evam Vikas Parishad",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "2",
+    "registration_no": "UPRERAPRJ6869",
+    "project_name": "32 LIG HOUSES TAJNAGRI PHASE-II",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "3",
+    "registration_no": "UPRERAPRJ7045",
+    "project_name": "32LIG HOUSES KALINDI VIHAR",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "4",
+    "registration_no": "UPRERAPRJ6783",
+    "project_name": "ADA HEIGHTS TOWER",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "5",
+    "registration_no": "UPRERAPRJ15665",
+    "project_name": "ANANDAM AWASIYA YOJNA",
+    "promoter_name": "HKG INFRATECH PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "6",
+    "registration_no": "UPRERAPRJ10654",
+    "project_name": "ANANT DESIRE",
+    "promoter_name": "DESIRE INFRAZONE PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "7",
+    "registration_no": "UPRERAPRJ10334",
+    "project_name": "ANANT VILAS",
+    "promoter_name": "ANANT ESTATE CONSTRUCTIONS PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "8",
+    "registration_no": "UPRERAPRJ637908",
+    "project_name": "Anjana Central",
+    "promoter_name": "Prompt Planners LLP",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "9",
+    "registration_no": "UPRERAPRJ11107",
+    "project_name": "ANSAL API SUSHANT TAJ CITY PLOTS ZONE-1",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "10",
+    "registration_no": "UPRERAPRJ11157",
+    "project_name": "ANSAL API SUSHANT TAJ CITY PLOTS ZONE-2",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "11",
+    "registration_no": "UPRERAPRJ11209",
+    "project_name": "ANSAL API SUSHANT TAJ CITY PLOTS ZONE-3",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "12",
+    "registration_no": "UPRERAPRJ2496",
+    "project_name": "ANSAL EMERALD HEIGHTS",
+    "promoter_name": "Ansal Housing Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "13",
+    "registration_no": "UPRERAPRJ4242",
+    "project_name": "ANSAL TOWN AGRA BLOCK-G",
+    "promoter_name": "Ansal Housing Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "14",
+    "registration_no": "UPRERAPRJ4206",
+    "project_name": "ANSAL TOWN AGRA BLOCK-H",
+    "promoter_name": "Ansal Housing Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "15",
+    "registration_no": "UPRERAPRJ3753",
+    "project_name": "ANSAL TOWN AGRA PHASE-III",
+    "promoter_name": "Ansal Housing Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "16",
+    "registration_no": "UPRERAPRJ3996",
+    "project_name": "ANSAL TWON AGRA PHASE- IV",
+    "promoter_name": "Ansal Housing Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "17",
+    "registration_no": "UPRERAPRJ5844",
+    "project_name": "ANSALS GALLERIA AGRA BLOCK-A",
+    "promoter_name": "Ansal Housing Limited",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "18",
+    "registration_no": "UPRERAPRJ9111",
+    "project_name": "ANTHELA",
+    "promoter_name": "M/S BHARAT NAGAR HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "19",
+    "registration_no": "UPRERAPRJ8530",
+    "project_name": "Anthem",
+    "promoter_name": "M/S BHARAT NAGAR HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "20",
+    "registration_no": "UPRERAPRJ662748",
+    "project_name": "Anthem Too",
+    "promoter_name": "Khush Infraestate",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "21",
+    "registration_no": "UPRERAPRJ7445",
+    "project_name": "ANUMANTRAN",
+    "promoter_name": "RAM MEHER INFRADEVELOPERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "22",
+    "registration_no": "UPRERAPRJ4083",
+    "project_name": "ANUPAM DAFFODILS",
+    "promoter_name": "MEHANDIPUR BALAJI DWELLING PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "23",
+    "registration_no": "UPRERAPRJ10748",
+    "project_name": "ANUPAM DAFFODILS",
+    "promoter_name": "MEHANDIPUR BALAJI DWELLING PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "24",
+    "registration_no": "UPRERAPRJ10440",
+    "project_name": "APARNA PANCHSHEEL",
+    "promoter_name": "BENARA INFRA STRUCTURE DEVELOPMENT PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "25",
+    "registration_no": "UPRERAPRJ9438",
+    "project_name": "aparna prem",
+    "promoter_name": "PREM INFRACITY PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "26",
+    "registration_no": "UPRERAPRJ721193/04/2024",
+    "project_name": "APARNA PREM EXTENSION",
+    "promoter_name": "PREM INFRACITY PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "27",
+    "registration_no": "UPRERAPRJ11315",
+    "project_name": "APARNA RIVER VIEW",
+    "promoter_name": "APARNA INFRA BUILDERS PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "28",
+    "registration_no": "UPRERAPRJ17447",
+    "project_name": "APNAA AWAS",
+    "promoter_name": "ATUL INFRAESTATE LLP.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "29",
+    "registration_no": "UPRERAPRJ863416",
+    "project_name": "ARADHYA GREEN",
+    "promoter_name": "ARADHYA DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "30",
+    "registration_no": "UPRERAPRJ12498",
+    "project_name": "ARYA_S 72",
+    "promoter_name": "Aadrika infracon Pvt. Ltd.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "31",
+    "registration_no": "UPRERAPRJ134282/10/2025",
+    "project_name": "Atal Puram Township Phase - 2",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "32",
+    "registration_no": "UPRERAPRJ447163/07/2025",
+    "project_name": "Atal Puram Township Phase-1",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "33",
+    "registration_no": "UPRERAPRJ466726/09/2025",
+    "project_name": "ATALPURAM PHASE 3",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Mixed"
+  },
+  {
+    "sno": "34",
+    "registration_no": "UPRERAPRJ17506",
+    "project_name": "ATUL HOMES",
+    "promoter_name": "Atul Shelters Pvt. Ltd.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "35",
+    "registration_no": "UPRERAPRJ534633/11/2024",
+    "project_name": "BANSURI HOMES-1",
+    "promoter_name": "Bee Pee Gee Pee Housing",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "36",
+    "registration_no": "UPRERAPRJ579885/03/2026",
+    "project_name": "BANSURI ORCHID",
+    "promoter_name": "GSM INFRATECH",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "37",
+    "registration_no": "UPRERAPRJ563214",
+    "project_name": "BANSURI VILLAS",
+    "promoter_name": "BANSURI HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "38",
+    "registration_no": "UPRERAPRJ10171",
+    "project_name": "BASERA HEIGHTS",
+    "promoter_name": "BASERA HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "39",
+    "registration_no": "UPRERAPRJ10295",
+    "project_name": "BHADAWAR ROYAL RESIDENCY",
+    "promoter_name": "SAR FRIENDS BUILDER",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "40",
+    "registration_no": "UPRERAPRJ7283",
+    "project_name": "BHARAT TALKIES ARCADE",
+    "promoter_name": "Ravi Kumar Agarwal HUF",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "41",
+    "registration_no": "UPRERAPRJ598930",
+    "project_name": "BHAWNA AROMA",
+    "promoter_name": "Bhawna Buildhome Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "42",
+    "registration_no": "UPRERAPRJ135729",
+    "project_name": "Bhawna City",
+    "promoter_name": "Bhawna Housing Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "43",
+    "registration_no": "UPRERAPRJ780042",
+    "project_name": "BHAWNA CITY PHASE 2",
+    "promoter_name": "Bhawna Housing Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "44",
+    "registration_no": "UPRERAPRJ123116",
+    "project_name": "BIBHAB GARDEN CITY",
+    "promoter_name": "BIBHAB BUILDERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "45",
+    "registration_no": "UPRERAPRJ290853",
+    "project_name": "BIBHAB GRANDE 2",
+    "promoter_name": "BIBHAB BUILDWELL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "46",
+    "registration_no": "UPRERAPRJ7499",
+    "project_name": "BIBHAB GRANDE PHASE 1",
+    "promoter_name": "BIBHAB BUILDWELL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "47",
+    "registration_no": "UPRERAPRJ7514",
+    "project_name": "BIBHAB GRANDE PHASE 2",
+    "promoter_name": "BIBHAB BUILDWELL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "48",
+    "registration_no": "UPRERAPRJ120936",
+    "project_name": "BIBHAB LACASA",
+    "promoter_name": "CHANDRA CONSTRUCTION COMPANY",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "49",
+    "registration_no": "UPRERAPRJ446268",
+    "project_name": "Blue Square Homes",
+    "promoter_name": "KREATIVE INFRAZONE PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "50",
+    "registration_no": "UPRERAPRJ782334/08/2025",
+    "project_name": "Buland Avenue",
+    "promoter_name": "LODHI INFRAPROMOTERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "51",
+    "registration_no": "UPRERAPRJ117081/09/2026",
+    "project_name": "BULAND GREENS",
+    "promoter_name": "Buland Housing Pvt. ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "52",
+    "registration_no": "UPRERAPRJ855434",
+    "project_name": "Buland Residency",
+    "promoter_name": "Buland Housing Pvt. ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "53",
+    "registration_no": "UPRERAPRJ9889",
+    "project_name": "Buland Vatika",
+    "promoter_name": "Buland Housing Pvt. ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "54",
+    "registration_no": "UPRERAPRJ10013",
+    "project_name": "CORPORATE PARK",
+    "promoter_name": "AGRA INFRALAND DEVELOPERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "55",
+    "registration_no": "UPRERAPRJ16842",
+    "project_name": "Development of Cattle Colony in Budhera Village Agra",
+    "promoter_name": "Mr. Devendra Sharma",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "56",
+    "registration_no": "UPRERAPRJ369719",
+    "project_name": "DHANI ORCHID",
+    "promoter_name": "VRINDA INFRATECH PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "57",
+    "registration_no": "UPRERAPRJ9732",
+    "project_name": "Diamond Hill",
+    "promoter_name": "Omkar Infrapromoters Pvt. Ltd.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "58",
+    "registration_no": "UPRERAPRJ868408",
+    "project_name": "DWARIKA GALAXY",
+    "promoter_name": "RADHIKA BUILDTECH PRIVATE LIMITED; RADHEYSHYAM INFRADEVELOPERS PRIVATE LIMITED; RADHIKA INFRASYS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "59",
+    "registration_no": "UPRERAPRJ100770",
+    "project_name": "DWARIKA GALLERIA",
+    "promoter_name": "Bhole Baba Constructions Private Limited",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "60",
+    "registration_no": "UPRERAPRJ313631",
+    "project_name": "Dwarika Grande Apartment",
+    "promoter_name": "Jai Shree Shyam Infratech",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "61",
+    "registration_no": "UPRERAPRJ873594",
+    "project_name": "Dwarika Grande Street",
+    "promoter_name": "D R Infra",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "62",
+    "registration_no": "UPRERAPRJ420483",
+    "project_name": "Dwarika Grande Vila",
+    "promoter_name": "Madhusudan AVAS Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "63",
+    "registration_no": "UPRERAPRJ397882",
+    "project_name": "Dwarika Green Valley",
+    "promoter_name": "D R Infra",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "64",
+    "registration_no": "UPRERAPRJ17465",
+    "project_name": "Dwarika Orchid",
+    "promoter_name": "PUSPANJALI REALTORS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "65",
+    "registration_no": "UPRERAPRJ977931",
+    "project_name": "Dwarika Orchid Phase 2",
+    "promoter_name": "PUSPANJALI REALTORS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "66",
+    "registration_no": "UPRERAPRJ966756",
+    "project_name": "Dwarika Orchid Phase 3",
+    "promoter_name": "PUSPANJALI REALTORS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "67",
+    "registration_no": "UPRERAPRJ651670/01/2026",
+    "project_name": "DWARIKA PALMS",
+    "promoter_name": "SHRI NIKETAN HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "68",
+    "registration_no": "UPRERAPRJ596460",
+    "project_name": "DWARIKA STREET",
+    "promoter_name": "TANMAY PROJECTS LLP (Formerly TANMAY PROJECTS PRIVATE LIMITED)",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "69",
+    "registration_no": "UPRERAPRJ959958/05/2025",
+    "project_name": "DWARIKA VATIKA",
+    "promoter_name": "DWARIKA CONSTRUCTIONS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "70",
+    "registration_no": "UPRERAPRJ888112",
+    "project_name": "DWARKESH GRAND",
+    "promoter_name": "KRISHNA BUILDZONE LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "71",
+    "registration_no": "UPRERAPRJ616308/02/2024",
+    "project_name": "DWARKESH GRAND EXTENSION",
+    "promoter_name": "ARPAN BUILDCON PRIVATE  LIMITED; KRISHNA BUILDZONE LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "72",
+    "registration_no": "UPRERAPRJ198139/09/2025",
+    "project_name": "DWARKESH GRAND EXTENSION-1",
+    "promoter_name": "KRISHNA BUILDZONE LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "73",
+    "registration_no": "UPRERAPRJ10542",
+    "project_name": "EKTA HEIGHTS",
+    "promoter_name": "EKTA BUILDERS & DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "74",
+    "registration_no": "UPRERAPRJ348330",
+    "project_name": "Ekta Raj Arcade",
+    "promoter_name": "ASHOK KUMAR AND OTHERS",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "75",
+    "registration_no": "UPRERAPRJ13248",
+    "project_name": "G G DREAMS",
+    "promoter_name": "SHRI GIRIRAJ SAHKARI AVAS SAMITI LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "76",
+    "registration_no": "UPRERAPRJ747761/04/2026",
+    "project_name": "G R VILLAS",
+    "promoter_name": "AVR HOMES LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "77",
+    "registration_no": "UPRERAPRJ13758",
+    "project_name": "G.C. GARDEN TOWNSHIP",
+    "promoter_name": "G. C. SAHAKARI AWAS SAMITI LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "78",
+    "registration_no": "UPRERAPRJ11009",
+    "project_name": "G.G. VILLAGE E",
+    "promoter_name": "GG DREAMS COTAGE PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "79",
+    "registration_no": "UPRERAPRJ937180/02/2026",
+    "project_name": "G.H.I. CITY -2",
+    "promoter_name": "CZAR BUILDCON PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "80",
+    "registration_no": "UPRERAPRJ963351",
+    "project_name": "GANGA RATAN SQUARE",
+    "promoter_name": "SHREE RAJ VENTURES",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "81",
+    "registration_no": "UPRERAPRJ446078/01/2026",
+    "project_name": "GANGAPURAM",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "82",
+    "registration_no": "UPRERAPRJ400642/09/2024",
+    "project_name": "Ganpati Smart City - Samriddhi Comfort Homes",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "83",
+    "registration_no": "UPRERAPRJ5926",
+    "project_name": "GANPATI SMART CITY PHASE - II",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "84",
+    "registration_no": "UPRERAPRJ726434",
+    "project_name": "GANPATI SMART CITY/GANPATI UNNATI AWAS YOJNA/NARMADA TOWER - 4",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "85",
+    "registration_no": "UPRERAPRJ5789",
+    "project_name": "GANPATI SMART CITY/UNNATI AWAS YOJNA PHASE-I",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "86",
+    "registration_no": "UPRERAPRJ749543",
+    "project_name": "GANPATI WONDER CITY PHASE -I",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "87",
+    "registration_no": "UPRERAPRJ797749",
+    "project_name": "GANPATI WORLD - SAUBHAGYA HOUSING SCHEME",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "88",
+    "registration_no": "UPRERAPRJ1695",
+    "project_name": "GANPATI WORLD II",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "89",
+    "registration_no": "UPRERAPRJ10366",
+    "project_name": "GG VILLAGE",
+    "promoter_name": "G.G. HOUSING DEVELOPERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "90",
+    "registration_no": "UPRERAPRJ841808/08/2026",
+    "project_name": "Godavaripuram",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "91",
+    "registration_no": "UPRERAPRJ14074",
+    "project_name": "GOKUL APARTMENT",
+    "promoter_name": "AGARWAL BUILDWELL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "92",
+    "registration_no": "UPRERAPRJ463992/05/2026",
+    "project_name": "Gomtipuram",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "93",
+    "registration_no": "UPRERAPRJ446787",
+    "project_name": "Govind Vihar Phase-1",
+    "promoter_name": "Govinda Housing Limited; GOVINDA HOUSING LIMITED; K.P. BUILDWELL PRIVATE LIMITED; MAHADEV SAHAKARI AWAS SAMITI LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "94",
+    "registration_no": "UPRERAPRJ11302",
+    "project_name": "GRAND FORT",
+    "promoter_name": "O P INFRAESTATE PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "95",
+    "registration_no": "UPRERAPRJ8201",
+    "project_name": "GREEN ENCLAVE SECTOR 2C AGRA",
+    "promoter_name": "U.P. Awas Evam Vikas Parishad",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "96",
+    "registration_no": "UPRERAPRJ11642",
+    "project_name": "GURU KRIPA TOWN",
+    "promoter_name": "PRABHU SAHKARI AVAS SAMITI LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "97",
+    "registration_no": "UPRERAPRJ11484",
+    "project_name": "GURU KRIPA TOWN",
+    "promoter_name": "NARAYANHARI SHELTER PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "98",
+    "registration_no": "UPRERAPRJ11507",
+    "project_name": "GURU KRIPA TOWN",
+    "promoter_name": "ARUSH HOUSING PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "99",
+    "registration_no": "UPRERAPRJ11559",
+    "project_name": "GURU KRIPA TOWN",
+    "promoter_name": "KAMPURI REAL ESTATE PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "100",
+    "registration_no": "UPRERAPRJ838806",
+    "project_name": "HARSH GREEN",
+    "promoter_name": "ARADHYA DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "101",
+    "registration_no": "UPRERAPRJ9697",
+    "project_name": "HELIOS",
+    "promoter_name": "RATAN INFRA-TECH",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "102",
+    "registration_no": "UPRERAPRJ10073",
+    "project_name": "IND. HOUSES IN NAARAYAN CITY BY NAARAYAN INFRATECH",
+    "promoter_name": "NAARAYAN INFRATECH",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "103",
+    "registration_no": "UPRERAPRJ9950",
+    "project_name": "INDIVIDUAL HOUSES  IN NAARAYAN CITY",
+    "promoter_name": "NAARAYAN BUILDCON",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "104",
+    "registration_no": "UPRERAPRJ964272/03/2026",
+    "project_name": "Indraprasth Valley",
+    "promoter_name": "Shree Balaji Sehkari Awas Samiti Limited Agra",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "105",
+    "registration_no": "UPRERAPRJ703388/04/2024",
+    "project_name": "INDUS VALLEY",
+    "promoter_name": "INDUS BUILDZONE PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "106",
+    "registration_no": "UPRERAPRJ2867",
+    "project_name": "Jaipuria Sunrise Greens",
+    "promoter_name": "PARKVIEW CITY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "107",
+    "registration_no": "UPRERAPRJ8350",
+    "project_name": "Jaipuria_s Dream Castle",
+    "promoter_name": "PARKVIEW CITY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "108",
+    "registration_no": "UPRERAPRJ4986",
+    "project_name": "Jaypee Greens Kensington Park Plots, Agra",
+    "promoter_name": "Jaypee Infratech Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "109",
+    "registration_no": "UPRERAPRJ9644",
+    "project_name": "Kailash Residency Part 1",
+    "promoter_name": "Maa Sarswati Infradevelopers Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "110",
+    "registration_no": "UPRERAPRJ9592",
+    "project_name": "Kailash Residency Part 1 and 2",
+    "promoter_name": "Indrarprasth Asiyana Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "111",
+    "registration_no": "UPRERAPRJ9765",
+    "project_name": "KAILASH TOWER",
+    "promoter_name": "KAILASH HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "112",
+    "registration_no": "UPRERAPRJ11045",
+    "project_name": "KALYANI HEIGHTS",
+    "promoter_name": "KALYANI BUILD-WELL PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "113",
+    "registration_no": "UPRERAPRJ750585/06/2026",
+    "project_name": "KANHA HOMES",
+    "promoter_name": "SHRI GIRIRAJ INFRAPLANNER LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "114",
+    "registration_no": "UPRERAPRJ675938/06/2025",
+    "project_name": "KAVERI SWARNIM",
+    "promoter_name": "KAVERI HOUSING LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "115",
+    "registration_no": "UPRERAPRJ8995",
+    "project_name": "KPS Town Phase - I",
+    "promoter_name": "Fortune Proptech Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "116",
+    "registration_no": "UPRERAPRJ9663",
+    "project_name": "KPS Town Phase - II",
+    "promoter_name": "Fortune Proptech Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "117",
+    "registration_no": "UPRERAPRJ869864",
+    "project_name": "KRISHNA ASPIRE EXTENSION",
+    "promoter_name": "SHREE KAILA INFRAVENTURES",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "118",
+    "registration_no": "UPRERAPRJ8320",
+    "project_name": "Krishna Avenue",
+    "promoter_name": "R M RESORTS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "119",
+    "registration_no": "UPRERAPRJ325978/06/2025",
+    "project_name": "KRISHNA CARNIVAL",
+    "promoter_name": "PG INFRADEVELOPERS LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "120",
+    "registration_no": "UPRERAPRJ9921",
+    "project_name": "Krishna Indraprasth Apartments",
+    "promoter_name": "INDRAPRASTH ASHIYANA INDIA PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "121",
+    "registration_no": "UPRERAPRJ211825",
+    "project_name": "Krishna Metro City(Formerly SNJ Town)",
+    "promoter_name": "NAV NIRMAN INFRAPROMOTERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "122",
+    "registration_no": "UPRERAPRJ527292/09/2025",
+    "project_name": "KRISHNA METRO MALL",
+    "promoter_name": "KRIDHA EARTH DEVELOPERS LLP; KRISHNA BHU VIKAS LLP",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "123",
+    "registration_no": "UPRERAPRJ11673",
+    "project_name": "KRISHNA MILESTONE",
+    "promoter_name": "RAAJNANDA HOUSING PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "124",
+    "registration_no": "UPRERAPRJ716434",
+    "project_name": "KRISHNA ROYALE",
+    "promoter_name": "Nipun Infradevelopers Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "125",
+    "registration_no": "UPRERAPRJ356865",
+    "project_name": "KRISHNA VAAS 2",
+    "promoter_name": "MATRABHOOMI INFRABUILD PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "126",
+    "registration_no": "UPRERAPRJ511164",
+    "project_name": "KRISHNA VALLEY",
+    "promoter_name": "KRISHNA BHU VIKAS LLP; PAWAN KUMAR AGARWAL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "127",
+    "registration_no": "UPRERAPRJ176038",
+    "project_name": "KRISHNA VILLAS",
+    "promoter_name": "Agra Infraplanners Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "128",
+    "registration_no": "UPRERAPRJ9465",
+    "project_name": "LANDMARK CITY - 1",
+    "promoter_name": "S R ENTERPRISES",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "129",
+    "registration_no": "UPRERAPRJ9704",
+    "project_name": "LANDMARK CITY - 2",
+    "promoter_name": "SHRI GOKUL INFRAPROMOTERS PVT. LTD.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "130",
+    "registration_no": "UPRERAPRJ9591",
+    "project_name": "LUXE PARADIISE",
+    "promoter_name": "M/S ASHOK HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "131",
+    "registration_no": "UPRERAPRJ364573/02/2026",
+    "project_name": "MAHANADIPURAM",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Mixed"
+  },
+  {
+    "sno": "132",
+    "registration_no": "UPRERAPRJ12366",
+    "project_name": "MALL",
+    "promoter_name": "P.P.M. INDIA",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "133",
+    "registration_no": "UPRERAPRJ402944/04/2024",
+    "project_name": "Mangal Padam Street",
+    "promoter_name": "Indraprastha Builders & Developers",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "134",
+    "registration_no": "UPRERAPRJ13963",
+    "project_name": "MANGLAM AADHAR",
+    "promoter_name": "JITENDRA KUMAR MANGLA",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "135",
+    "registration_no": "UPRERAPRJ14091",
+    "project_name": "MANGLAM NIKET",
+    "promoter_name": "JITENDRA KUMAR MANGLA",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "136",
+    "registration_no": "UPRERAPRJ14114",
+    "project_name": "MANGLAM NILAY",
+    "promoter_name": "JITENDRA KUMAR MANGLA",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "137",
+    "registration_no": "UPRERAPRJ13973",
+    "project_name": "MANGLAM SHILA (BLOCK-C)",
+    "promoter_name": "JITENDRA KUMAR MANGLA",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "138",
+    "registration_no": "UPRERAPRJ7127",
+    "project_name": "MANHAR GARDEN",
+    "promoter_name": "GAYATRI DEVELOPWELL PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "139",
+    "registration_no": "UPRERAPRJ11130",
+    "project_name": "Manhar Grove",
+    "promoter_name": "Max builders private limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "140",
+    "registration_no": "UPRERAPRJ10947",
+    "project_name": "MARUTI FOREST",
+    "promoter_name": "JUPITER BUILDTECH PVT. LTD.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "141",
+    "registration_no": "UPRERAPRJ11301",
+    "project_name": "MARUTI PRAVASHAM",
+    "promoter_name": "PRAVASHAM BUILDWELL PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "142",
+    "registration_no": "UPRERAPRJ939574",
+    "project_name": "MAYUR VIHAR",
+    "promoter_name": "P P Buildcon Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "143",
+    "registration_no": "UPRERAPRJ497764",
+    "project_name": "NAARAYAN AVENUE",
+    "promoter_name": "RJ INFRA HOMES PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "144",
+    "registration_no": "UPRERAPRJ332950/10/2026",
+    "project_name": "NAARAYAN AVENUE EXTENSION",
+    "promoter_name": "MANHAR DWELLINGS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "145",
+    "registration_no": "UPRERAPRJ282685/12/2025",
+    "project_name": "Narmadapuram",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Mixed"
+  },
+  {
+    "sno": "146",
+    "registration_no": "UPRERAPRJ14225",
+    "project_name": "NIKHIL PARK ROYAL",
+    "promoter_name": "NIKHIL HOME ASSOCIATE",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "147",
+    "registration_no": "UPRERAPRJ11487",
+    "project_name": "OMKAR",
+    "promoter_name": "OM PRAKASH AGARWAL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "148",
+    "registration_no": "UPRERAPRJ11639",
+    "project_name": "Omshree Inspire",
+    "promoter_name": "AGROHA HOMES PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "149",
+    "registration_no": "UPRERAPRJ11392",
+    "project_name": "OMSHREE PLATINUM",
+    "promoter_name": "DAUJI RESIDENCY PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "150",
+    "registration_no": "UPRERAPRJ11564",
+    "project_name": "OMSHREE SILVER VALLEY",
+    "promoter_name": "SHRIJI INFRAHOUSE PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "151",
+    "registration_no": "UPRERAPRJ8251",
+    "project_name": "Padam Corporate Park",
+    "promoter_name": "SHREE RIDDHI SIDDHI BUILDWELL LIMITED",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "152",
+    "registration_no": "UPRERAPRJ4760",
+    "project_name": "Padam Eternity",
+    "promoter_name": "SHREE RIDDHI SIDDHI BUILDWELL LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "153",
+    "registration_no": "UPRERAPRJ2943",
+    "project_name": "PADAM HIGH STREET",
+    "promoter_name": "Shree Riddhi Siddhi Constructions",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "154",
+    "registration_no": "UPRERAPRJ4858",
+    "project_name": "Padam Pride Phase-II",
+    "promoter_name": "SHREE RIDDHI SIDDHI BUILDWELL LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "155",
+    "registration_no": "UPRERAPRJ12581",
+    "project_name": "PARK VIEW",
+    "promoter_name": "Kadambari Infradevelopers Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "156",
+    "registration_no": "UPRERAPRJ5451",
+    "project_name": "PARSVNATH PRERNA PLAZA",
+    "promoter_name": "PARSVNATH DEVELOPERS LIMITED",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "157",
+    "registration_no": "UPRERAPRJ387674",
+    "project_name": "Pitambara Paradise",
+    "promoter_name": "VIJAY INTERNATIONAL",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "158",
+    "registration_no": "UPRERAPRJ17203",
+    "project_name": "Pradhanmantri Awas Yojna Village Mahua Khera Agra",
+    "promoter_name": "Mr. Devendra Sharma",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "159",
+    "registration_no": "UPRERAPRJ12604",
+    "project_name": "PRAKSHI TOWER",
+    "promoter_name": "Prakshi Infra Estate Pvt. Ltd( Formerly MUKESH CHAND); PRAKSHI INFRAESTATE PVT LTD",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "160",
+    "registration_no": "UPRERAPRJ403992",
+    "project_name": "Priyanshi Residency",
+    "promoter_name": "Priyanshi Shelters Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "161",
+    "registration_no": "UPRERAPRJ908006",
+    "project_name": "PUSHPANJALI CITY",
+    "promoter_name": "Lokpriy Sahkari Awas Samiti Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "162",
+    "registration_no": "UPRERAPRJ4741",
+    "project_name": "Pushpanjali Gardenia Phase-1",
+    "promoter_name": "Pushpanjali Constructions Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "163",
+    "registration_no": "UPRERAPRJ955216",
+    "project_name": "Pushpanjali Grandeur",
+    "promoter_name": "Pushpanjali Constructions Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "164",
+    "registration_no": "UPRERAPRJ4964",
+    "project_name": "Pushpanjali Heights",
+    "promoter_name": "Pushpanjali Constructions Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "165",
+    "registration_no": "UPRERAPRJ11140",
+    "project_name": "Pushpanjali Planet (Pushpanjali Habitat)",
+    "promoter_name": "Pushpanjali Constructions Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "166",
+    "registration_no": "UPRERAPRJ13009",
+    "project_name": "Pushpanjali Seasons Phase-1",
+    "promoter_name": "Pushpanjali Constructions Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "167",
+    "registration_no": "UPRERAPRJ158113",
+    "project_name": "PUSHPANJALI VEDANTA",
+    "promoter_name": "TRIPURARI ESTATE PRIVATE LIMITED; TRIPURARI INFRASTRUCUTRE PRIVATE LIMITED; VRINDA INFRABUILD PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "168",
+    "registration_no": "UPRERAPRJ8315",
+    "project_name": "RADHARANI HEIGHTS",
+    "promoter_name": "RK BUILDERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "169",
+    "registration_no": "UPRERAPRJ895548/02/2024",
+    "project_name": "RAJDARBAR SPACES PHASE-3",
+    "promoter_name": "Rajdarbar Ayurveda Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "170",
+    "registration_no": "UPRERAPRJ13798",
+    "project_name": "RAJENDRA CENTRE",
+    "promoter_name": "RAJENDRA DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "171",
+    "registration_no": "UPRERAPRJ7221",
+    "project_name": "Ram Raghu Ananda",
+    "promoter_name": "Ram Raghu Buildwell",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "172",
+    "registration_no": "UPRERAPRJ7340",
+    "project_name": "Ram Raghu Ananda Phase 2",
+    "promoter_name": "Ram Raghu Buildwell",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "173",
+    "registration_no": "UPRERAPRJ7311",
+    "project_name": "Ram Raghu Palazzo",
+    "promoter_name": "Ram Raghu Buildwell",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "174",
+    "registration_no": "UPRERAPRJ11772",
+    "project_name": "RANGJEE HEIGHTS",
+    "promoter_name": "RANGJEE BUILDWELL PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "175",
+    "registration_no": "UPRERAPRJ858244/03/2026",
+    "project_name": "ROYALE VILLAS",
+    "promoter_name": "VATIKA BUILDCON PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "176",
+    "registration_no": "UPRERAPRJ10182",
+    "project_name": "SAMRIDHI COURTS",
+    "promoter_name": "BRIJ INFRATECH REAL ESTATE DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "177",
+    "registration_no": "UPRERAPRJ9449",
+    "project_name": "SANSKRITI APPARTMENT",
+    "promoter_name": "AGARWAL SHELTERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "178",
+    "registration_no": "UPRERAPRJ689444/10/2025",
+    "project_name": "SAPPHIRE COMPLEX",
+    "promoter_name": "ZARAKUNITED PRIVATE LIMITED; MADAN LAL SHARMA",
+    "district": "Agra",
+    "project_type": "Mixed"
+  },
+  {
+    "sno": "179",
+    "registration_no": "UPRERAPRJ580064",
+    "project_name": "SARITA DHAM",
+    "promoter_name": "RAINBOW INFRA HOUSING PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "180",
+    "registration_no": "UPRERAPRJ252691/09/2024",
+    "project_name": "SAVITA VIHAR",
+    "promoter_name": "SHREE SNEH SAHAKARI AVAS SAMITI LIMITED AGRA",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "181",
+    "registration_no": "UPRERAPRJ10814",
+    "project_name": "SAVITRI VISTA",
+    "promoter_name": "DHRUV INFRAHEIGHTS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "182",
+    "registration_no": "UPRERAPRJ6549",
+    "project_name": "Shanker Greens- Phase 1",
+    "promoter_name": "Swami Nirman Pvt. Ltd.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "183",
+    "registration_no": "UPRERAPRJ6663",
+    "project_name": "Shanker Greens- Phase 2",
+    "promoter_name": "Swami Nirman Pvt. Ltd.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "184",
+    "registration_no": "UPRERAPRJ9734",
+    "project_name": "SHANTI EMPORIO",
+    "promoter_name": "S V BUILDERS AND PROMOTERS",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "185",
+    "registration_no": "UPRERAPRJ10137",
+    "project_name": "SHANTI ENCLAVE",
+    "promoter_name": "MADHAV HOUSING",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "186",
+    "registration_no": "UPRERAPRJ13516",
+    "project_name": "SHANTI SQUARE",
+    "promoter_name": "B S BHANDARI & ASSOCIATES",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "187",
+    "registration_no": "UPRERAPRJ6402",
+    "project_name": "Shashtripuram Tower",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "188",
+    "registration_no": "UPRERAPRJ6711",
+    "project_name": "SHASTRIPURAM SULABH AWAS YOJNA",
+    "promoter_name": "Agra Development Authority",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "189",
+    "registration_no": "UPRERAPRJ13252",
+    "project_name": "SHIV GANGA RESIDENCY",
+    "promoter_name": "KALYAN CONSTRUCTION",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "190",
+    "registration_no": "UPRERAPRJ9609",
+    "project_name": "SHREE DWARIKA",
+    "promoter_name": "BAIJNATH AGARWAL STEELS PVT.LTD.",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "191",
+    "registration_no": "UPRERAPRJ252560",
+    "project_name": "SHREE RAM TRADE CENTER",
+    "promoter_name": "S.D. SONS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Commercial"
+  },
+  {
+    "sno": "192",
+    "registration_no": "UPRERAPRJ8478",
+    "project_name": "Shri Krishna Lok Apartments",
+    "promoter_name": "OM HARI SAHKARI AWAS SAMITI LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "193",
+    "registration_no": "UPRERAPRJ563327",
+    "project_name": "SHRI KRISHNA VAAS EXTENSION",
+    "promoter_name": "GOVIND INFRAPLANNER PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "194",
+    "registration_no": "UPRERAPRJ13907",
+    "project_name": "SHRI SHYAM KRIPA APPARTMENT",
+    "promoter_name": "SHRI SHYAM KRIPA ASSOCIATES",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "195",
+    "registration_no": "UPRERAPRJ10683",
+    "project_name": "Shri Tulsi Budjet Villa",
+    "promoter_name": "TULSI INFRAHEIGHTS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "196",
+    "registration_no": "UPRERAPRJ711028",
+    "project_name": "SHRI TULSI MEERA HOMES",
+    "promoter_name": "TULSI INFRAPROMOTERS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "197",
+    "registration_no": "UPRERAPRJ13612",
+    "project_name": "SHRI TULSI SKY CITY",
+    "promoter_name": "TULSI INFRAHEIGHTS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "198",
+    "registration_no": "UPRERAPRJ6592",
+    "project_name": "SHYAM VRINDAVAN II",
+    "promoter_name": "N.S.B BUILDERS & ENGINEERS LLP",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "199",
+    "registration_no": "UPRERAPRJ6746",
+    "project_name": "singhal dream city",
+    "promoter_name": "M R INFRAESTATE PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "200",
+    "registration_no": "UPRERAPRJ103637/05/2025",
+    "project_name": "SUMAN  ENCLAVE",
+    "promoter_name": "Uttam Venture Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "201",
+    "registration_no": "UPRERAPRJ11421",
+    "project_name": "Sumanglam Residency",
+    "promoter_name": "Anna Infrastructures Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "202",
+    "registration_no": "UPRERAPRJ7224",
+    "project_name": "Surya Gold Apartment",
+    "promoter_name": "SURYA INFRABUILD (INDIA) PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "203",
+    "registration_no": "UPRERAPRJ5593",
+    "project_name": "SUSHANT TAJ CITY  EWS LIG PHASE-1",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "204",
+    "registration_no": "UPRERAPRJ5466",
+    "project_name": "SUSHANT TAJ CITY AASTHA/KALPANA PHASE-1",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "205",
+    "registration_no": "UPRERAPRJ5700",
+    "project_name": "SUSHANT TAJ CITY BUILT UPS",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "206",
+    "registration_no": "UPRERAPRJ6713",
+    "project_name": "SUSHANT TAJ CITY PLOT ZONE-4",
+    "promoter_name": "ANSAL PROPERTIES & INFRASTRUCTURE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "207",
+    "registration_no": "UPRERAPRJ4847",
+    "project_name": "Taj Royale",
+    "promoter_name": "Ganga Ratan Developers",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "208",
+    "registration_no": "UPRERAPRJ7111",
+    "project_name": "The Crown Phase 1",
+    "promoter_name": "Dwarika Residency Pvt Ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "209",
+    "registration_no": "UPRERAPRJ7297",
+    "project_name": "The Crown Phase 2",
+    "promoter_name": "Dwarika Residency Pvt Ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "210",
+    "registration_no": "UPRERAPRJ10940",
+    "project_name": "The Florence",
+    "promoter_name": "NIIL Infrastructures Pvt Ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "211",
+    "registration_no": "UPRERAPRJ13815",
+    "project_name": "Trilok Apartments",
+    "promoter_name": "Satyansh Infra Promoters Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "212",
+    "registration_no": "UPRERAPRJ11125",
+    "project_name": "Twin Tower",
+    "promoter_name": "Bholey Baba Infracon Pvt Ltd",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "213",
+    "registration_no": "UPRERAPRJ15396",
+    "project_name": "UNNATI AWAS YOJNA - PHASE 3",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "214",
+    "registration_no": "UPRERAPRJ705385",
+    "project_name": "VARAHI APARTMENTS",
+    "promoter_name": "Varahi Builders Private Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "215",
+    "registration_no": "UPRERAPRJ207416",
+    "project_name": "VIHAAN GREEN",
+    "promoter_name": "BANKEY BIHARI AVAS PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "216",
+    "registration_no": "UPRERAPRJ162313",
+    "project_name": "VISHWAKARMA CARNIVAL",
+    "promoter_name": "BRIJESH SAHKARI AVAS SAMITI LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "217",
+    "registration_no": "UPRERAPRJ8920",
+    "project_name": "Vishwakarma Graden",
+    "promoter_name": "SHIKAHAR NIRMAN PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "218",
+    "registration_no": "UPRERAPRJ13761",
+    "project_name": "VIVANTE",
+    "promoter_name": "SAP INFRA HOUSING PRIVATE LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "219",
+    "registration_no": "UPRERAPRJ14083",
+    "project_name": "VRINDAVAN HEIGHT",
+    "promoter_name": "ASM BUILDERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "220",
+    "registration_no": "UPRERAPRJ7472",
+    "project_name": "Wadhwa Palm Regency",
+    "promoter_name": "Rajeev Son HUF",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "221",
+    "registration_no": "UPRERAPRJ7700",
+    "project_name": "WONDER CITY",
+    "promoter_name": "GANPATI INFRASTRUCTURE DEVELOPMENT COMPANY LIMITED",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "222",
+    "registration_no": "UPRERAPRJ889498",
+    "project_name": "Yamuna View Apartments",
+    "promoter_name": "Govinda Housing Limited",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "223",
+    "registration_no": "UPRERAPRJ12382",
+    "project_name": "YASHODHA ENCLAVE PHASE-1",
+    "promoter_name": "SANWARIYA BUILDERS AND DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  },
+  {
+    "sno": "224",
+    "registration_no": "UPRERAPRJ12381",
+    "project_name": "YASHODHA ENCLAVE PHASE-2",
+    "promoter_name": "SANWARIYA BUILDERS AND DEVELOPERS",
+    "district": "Agra",
+    "project_type": "Residential"
+  }
+]

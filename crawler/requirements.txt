@@ -1,2 +1,7 @@
 requests
 beautifulsoup4
+pymongo
+boto3
+playwright
+pypdf
+Pillow

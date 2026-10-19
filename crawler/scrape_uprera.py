@@ -6,13 +6,19 @@ This is a plain server-rendered ASP.NET page (a GridView control) that lists eve
 registered project in the given district. It needs no login/session and is fetched
 with a single GET request.
 
-Note: the per-project "View Detail" pages (promoter mobile/email, registration
-dates, land info, etc.) are intentionally out of scope -- those pages render blank
-for every automated client tested (plain requests and a scripted headless browser
-following the exact same click/redirect a human would), while a normal interactive
-browser session renders them fine. That pattern indicates the site is blocking
-automated access to the pages that expose promoter contact details, so this script
-does not attempt to work around it.
+Always writes CSV/JSON. Also upserts the list into MongoDB's `projects`
+collection (see uprera_store.upsert_list_rows) when MONGODB_URI is set, or
+when --mongo is passed explicitly — pass --no-mongo to skip that. Once the
+list is in Mongo, process_details.py can fetch and import each project's full
+detail straight from there, for this or any other district, with no file to
+carry between the two steps.
+
+Full per-project detail (promoter mobile/email, registration dates, land
+info, documents, etc.) is out of scope for this script — see
+process_details.py / fetch_details.py / uprera_fetch.py for that. An earlier
+version of this docstring claimed those pages were anti-bot gated; they are
+not (confirmed 2026-10-03) — see crawler/import_rera.py's module docstring
+and real_estate_backend's UpreraClient.java.
 """
 from __future__ import annotations
 
@@ -127,6 +133,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Scrape UP-RERA registered projects for a district.")
     parser.add_argument("--district", default="Gautam Buddha Nagar", help="District name as used on up-rera.in")
     parser.add_argument("--out-dir", default="data", help="Output directory for CSV/JSON files")
+    parser.add_argument(
+        "--mongo", dest="mongo", action="store_true", default=None,
+        help="upsert the list into MongoDB (default: on if MONGODB_URI is set in .env)",
+    )
+    parser.add_argument(
+        "--no-mongo", dest="mongo", action="store_false",
+        help="skip the MongoDB upsert, write CSV/JSON only",
+    )
     args = parser.parse_args()
 
     out_dir = Path(args.out_dir)
@@ -150,6 +164,20 @@ def main() -> None:
     print(f"Saved {len(projects)} projects to:")
     print(f"  {csv_path}")
     print(f"  {json_path}")
+
+    from uprera_store import connect_mongo, ensure_indexes, load_env, upsert_list_rows
+
+    env = load_env()
+    want_mongo = args.mongo if args.mongo is not None else bool(env.get("MONGODB_URI"))
+    if want_mongo:
+        client, db = connect_mongo(env)
+        ensure_indexes(db)
+        n = upsert_list_rows(db, projects)
+        print(f"Upserted {n} projects into MongoDB ({db.name}).")
+        client.close()
+    elif args.mongo is None:
+        print("MONGODB_URI not set -- skipping the MongoDB upsert (CSV/JSON only). "
+              "Pass --mongo to force it, or set MONGODB_URI in .env.")
 
 
 if __name__ == "__main__":
